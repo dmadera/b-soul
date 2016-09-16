@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Monstserrat;
+    src: url('../fonts/Montserrat-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: Monstserrat;
+    font-weight: bold;
+    src: url('../fonts/Montserrat-Regular.otf');
+}
+
+body {
+    margin: 0;
+    background: #000;
+    font-family: Monstserrat;
+}
+
+* {
+    color: white;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+footer,
+article,
+section {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+img[src*='.svg'] {
+    display: none;
+}
