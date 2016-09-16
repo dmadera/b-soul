@@ -1,16 +1,8 @@
-// $(window).scroll(function() {
-//     if ($(this).scrollTop() > 100 && $('.site-wrapper').css("display") != "none") {
-//         $('.site-wrapper').slideUp("slow", function() {
-//             $('.site-wrapper').css({
-//                 'display': 'none'
-//             });
-//             console.log('Done!');
-//         });
-//     }
-// });
-
-$(function() {
-    $(".site-wrapper").click(function() {
-        $(".site-wrapper").slideUp();
+$(document).ready(function() {
+    $("img[src*='.svg']").each(function() {
+        var img = $(this);
+        $.get(img.attr("src"), function(svg) {
+            img.replaceWith(svg);
+        }, 'text');
     });
 });
