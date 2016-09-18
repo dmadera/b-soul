@@ -5,63 +5,6 @@ header {
     position: relative;
 }
 
-#bgvideo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -100;
-    background: url('../images/layout/background.jpg') no-repeat;
-    background-size: cover;
-    opacity: .3;
-}
-
-#logo {
-    float: left;
-    margin: 40px 0 0 40px;
-    width: 250px;
-}
-
-#logo svg path {
-    fill: #ffffff;
-}
-
-nav {
-    float: left;
-    width: 65%;
-}
-
-nav#welcome ul {
-    float: right;
-    list-style-type: none;
-    margin: 25px;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav#welcome li {
-    float: left;
-    margin: 0 20px;
-    padding: 5px 5px;
-}
-
-nav#welcome li a {
-    display: block;
-    text-align: center;
-    margin: 5px 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-svg.underline {
-    display: none;
-}
-
-nav#welcome a:hover + .underline {
-    display: block;
-}
-
 footer {
     display: block;
     margin: 0px auto;
