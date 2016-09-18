@@ -1,0 +1,7 @@
+<svg id="facebookIconSocial" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
+    <title>facebook</title>
+    <g id="fb">
+        <circle cx="38" cy="38" r="38" fill="#c0bfbf" />
+        <path d="M1814.34,62.88H1808V58.76a1.69,1.69,0,0,1,1.74-1.9h4.43v-7H1808c-7,0-8.39,5.23-8.39,8.39v4.59h-4V70h4V90.11H1808V70h5.7Z" transform="translate(-1767 -32)" fill="#414141" />
+    </g>
+</svg>
