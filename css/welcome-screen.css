@@ -90,12 +90,10 @@ nav#welcome a:hover + .underline {
 #joinUsPanel {
     position: absolute;
     bottom: 50px;
-    right: 0px;
-    width: 500px;
+    right: 50px;
 }
 
 #joinUsPanel a {
     display: block;
     width: 280px;
-    margin: 10px 0px 10px 80px;
 }

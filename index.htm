@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>B-SOUL Academy Liberec</title>
     <link href="./css/global.css" rel="stylesheet">
-    <link href="./css/layout.css" rel="stylesheet">
     <link href="./css/welcome-screen.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -73,11 +72,14 @@
             </ul>
         </div>
         <div id="joinUsPanel">
-            <div>
-                <a href="#">
+            <a href="#">
+                <div>
                     <svg src="./images/welcome-screen/join-us.svg"></svg>
-                </a>
-            </div>
+                </div>
+                <div class="hidden hover">
+                    <svg src="./images/welcome-screen/join-us-hover.svg"></svg>
+                </div>
+            </a>
         </div>
         <video poster="./images/welcome-screen/background.jpg" id="bgvideo">
             <source src="./images/welcome-screen/background-promo.mp4" type="video/mp4">

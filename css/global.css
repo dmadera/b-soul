@@ -38,6 +38,10 @@ section {
     clear: both;
 }
 
+.hidden {
+    display: none;
+}
+
 svg[src*='.svg'] {
     display: none;
 }

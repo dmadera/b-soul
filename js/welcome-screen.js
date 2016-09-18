@@ -21,20 +21,13 @@ var videoHandler = function() {
 }
 
 var joinUsHandler = function() {
-    var hover, nonhover;
-    $.get('../images/welcome-screen/join-us-hover.svg', function(svg) {
-        hover = svg;
-    }, 'text');
-
-    $.get('../images/welcome-screen/join-us.svg', function(svg) {
-        nonhover = svg;
-    }, 'text');
-
-    $('#joinUsPanel div').hover(function() {
-            $(this).find('svg').replaceWith(hover);
+    $('#joinUsPanel a').hover(function() {
+            $('#joinUsPanel div:not(.hover)').hide();
+            $('#joinUsPanel div.hover').show();
         },
         function() {
-            $(this).find('svg').replaceWith(nonhover);
+            $('#joinUsPanel div.hover').hide();
+            $('#joinUsPanel div:not(.hover)').show();
         }
     );
 }
