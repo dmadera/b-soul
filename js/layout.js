@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // replace img tags with svg file
-    $("img[src*='.svg']").each(function() {
+    $("svg[src*='.svg']").each(function() {
         var img = $(this);
         $.get(img.attr("src"), function(svg) {
             img.replaceWith(svg);
