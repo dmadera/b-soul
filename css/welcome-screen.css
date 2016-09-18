@@ -55,30 +55,30 @@ nav#welcome a:hover + .underline {
     display: block;
 }
 
-#socialWrapper {
+social-panel {
     float: right;
     width: 100px;
 }
 
-#socialWrapper ul {
+social-panel ul {
     list-style-type: none;
     margin: 25px 25px 0 0;
 }
 
-#socialWrapper li {
+social-panel li {
     width: 50px;
     margin: 0px auto;
     padding-bottom: 7px;
 }
 
-#socialWrapper li:hover {
+social-panel li:hover {
     width: 65px;
 }
 
-#socialWrapper li:hover svg [fill='#c0bfbf'] {
+social-panel li:hover svg [fill='#c0bfbf'] {
     fill: #a8835e;
 }
 
-#socialWrapper li:hover svg [fill='#414141'] {
+social-panel li:hover svg [fill='#414141'] {
     fill: #ffffff;
 }
