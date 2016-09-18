@@ -8,11 +8,12 @@
     <meta name="description" content="B-SOUL Academy Liberec - taneční šḱola">
     <meta name="keywords" content="B-SOUL, tanec, street, poppin, freestyle">
     <meta name="author" content="Daniel Maděra">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>B-SOUL Academy Liberec</title>
     <link href="./css/global.css" rel="stylesheet">
     <link href="./css/layout.css" rel="stylesheet">
     <link href="./css/welcome-screen.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -26,53 +27,61 @@
             <svg src="./images/logo.svg" alt="Logo B-SOUL DANCE ACADEMY"></svg>
         </div>
         <nav id="welcome">
-            <ul>
-                <li>
-                    <a href="#">Aktuality</a>
-                    <svg src="./images/layout/underline.svg"></svg>
-                </li>
-                <li>
-                    <a href="#">B-SOUL</a>
-                    <svg src="./images/layout/underline.svg"></svg>
-                </li>
-                <li>
-                    <a href="#">Galerie</a>
-                    <svg src="./images/layout/underline.svg"></svg>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                    <svg src="./images/layout/underline.svg"></svg>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Aktuality</a>
+                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                    </li>
+                    <li>
+                        <a href="#">B-SOUL</a>
+                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                    </li>
+                    <li>
+                        <a href="#">Galerie</a>
+                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <social-panel>
+        <div id="socialPanel">
             <ul>
                 <li class="facebook">
                     <a href="https://www.facebook.com/B-Soul-1716787281897235">
-                        <svg src="./images/social/facebook-icon.svg"></svg>
+                        <svg src="./images/welcome-screen/facebook-icon.svg"></svg>
                     </a>
                 </li>
                 <li class="youtube">
                     <a href="https://www.youtube.com">
-                        <svg src="./images/social/youtube-icon.svg"></svg>
+                        <svg src="./images/welcome-screen/youtube-icon.svg"></svg>
                     </a>
                 </li>
                 <li class="instagram">
                     <a href="https://www.instagram.com">
-                        <svg src="./images/social/instagram-icon.svg"></svg>
+                        <svg src="./images/welcome-screen/instagram-icon.svg"></svg>
                     </a>
                 </li>
                 <li class="email">
                     <a href="#">
-                        <svg src="./images/social/email-icon.svg"></svg>
+                        <svg src="./images/welcome-screen/email-icon.svg"></svg>
                     </a>
                 </li>
             </ul>
-        </social-panel>
-        <video poster="./images/layout/background.jpg" id="bgvideo">
-            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of 
-        illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-            <source src="./images/layout/background-promo.mp4" type="video/mp4">
+        </div>
+        <div id="joinUsPanel">
+            <div class="hover"></div>
+            <a href="#">
+                <div>
+                    <svg src="./images/welcome-screen/join-us.svg"></svg>
+                </div>
+            </a>
+        </div>
+        <video poster="./images/welcome-screen/background.jpg" id="bgvideo">
+            <source src="./images/welcome-screen/background-promo.mp4" type="video/mp4">
         </video>
     </header>
     <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -122,6 +131,7 @@
     <script>
     window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')
     </script>
+    <script src="./js/vendor/jquery-ui.min.js"></script>
     <script src="./js/layout.js"></script>
 </body>
 

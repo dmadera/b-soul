@@ -4,14 +4,13 @@
     top: 0;
     width: 100%;
     z-index: -100;
-    background: url('../images/layout/background.jpg') no-repeat;
-    background-size: cover;
     opacity: .3;
 }
 
 #logo {
-    float: left;
-    margin: 25px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
     width: 280px;
 }
 
@@ -19,17 +18,20 @@
     fill: #ffffff;
 }
 
-nav {
-    float: left;
-    width: 65%;
+nav#welcome {
+    width: 100%;
+}
+
+nav#welcome div {
+    margin: 30px 120px 0 320px;
+    text-align: center;
 }
 
 nav#welcome ul {
-    float: right;
-    list-style-type: none;
-    margin: 25px;
-    padding: 0;
+    display: inline-block;
     overflow: hidden;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav#welcome li {
@@ -55,30 +57,72 @@ nav#welcome a:hover + .underline {
     display: block;
 }
 
-social-panel {
-    float: right;
-    width: 100px;
+#socialPanel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 65px;
 }
 
-social-panel ul {
+#socialPanel ul {
     list-style-type: none;
-    margin: 25px 25px 0 0;
+    margin: 0;
 }
 
-social-panel li {
+#socialPanel li {
     width: 50px;
     margin: 0px auto;
     padding-bottom: 7px;
 }
 
-social-panel li:hover {
+#socialPanel li:hover {
     width: 65px;
 }
 
-social-panel li:hover svg [fill='#c0bfbf'] {
+#socialPanel li:hover svg [fill='#c0bfbf'] {
     fill: #a8835e;
 }
 
-social-panel li:hover svg [fill='#414141'] {
+#socialPanel li:hover svg [fill='#414141'] {
     fill: #ffffff;
 }
+
+#joinUsPanel {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    width: 500px;
+}
+
+#joinUsPanel div.hover {
+    z-index: -99;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px 0 0 150px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#joinUsPanel a {
+    display: block;
+    width: 280px;
+    margin: 10px 0px 10px 80px;
+}
+
+
+/*#joinUsPanel.hover {
+    border-radius: 150px 0 0 150px;
+    background-color: rgba(255, 255, 255, .3);
+}
+*/
+
+
+/*#joinUsPanel a:hover svg path {
+    fill: #a8835e;
+}*/
+
+
+/*#joinUsPanel a:hover {
+    width: 300px;
+}
+*/
