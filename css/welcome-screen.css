@@ -94,35 +94,8 @@ nav#welcome a:hover + .underline {
     width: 500px;
 }
 
-#joinUsPanel div.hover {
-    z-index: -99;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 150px 0 0 150px;
-    background-color: rgba(255, 255, 255, .3);
-}
-
 #joinUsPanel a {
     display: block;
     width: 280px;
     margin: 10px 0px 10px 80px;
 }
-
-
-/*#joinUsPanel.hover {
-    border-radius: 150px 0 0 150px;
-    background-color: rgba(255, 255, 255, .3);
-}
-*/
-
-
-/*#joinUsPanel a:hover svg path {
-    fill: #a8835e;
-}*/
-
-
-/*#joinUsPanel a:hover {
-    width: 300px;
-}
-*/
