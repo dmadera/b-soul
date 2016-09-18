@@ -11,8 +11,8 @@
 
 #logo {
     float: left;
-    margin: 40px 0 0 40px;
-    width: 250px;
+    margin: 25px;
+    width: 280px;
 }
 
 #logo svg path {
@@ -53,4 +53,32 @@ svg.underline {
 
 nav#welcome a:hover + .underline {
     display: block;
+}
+
+#socialWrapper {
+    float: right;
+    width: 100px;
+}
+
+#socialWrapper ul {
+    list-style-type: none;
+    margin: 25px 25px 0 0;
+}
+
+#socialWrapper li {
+    width: 50px;
+    margin: 0px auto;
+    padding-bottom: 7px;
+}
+
+#socialWrapper li:hover {
+    width: 65px;
+}
+
+#socialWrapper li:hover svg [fill='#c0bfbf'] {
+    fill: #a8835e;
+}
+
+#socialWrapper li:hover svg [fill='#414141'] {
+    fill: #ffffff;
 }
