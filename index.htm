@@ -10,9 +10,9 @@
     <meta name="author" content="Daniel Maděra">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>B-SOUL Academy Liberec</title>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link href="./css/global.css" rel="stylesheet">
     <link href="./css/welcome-screen.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,26 +23,26 @@
 <body>
     <header>
         <div id="logo">
-            <svg src="./images/logo.svg" alt="Logo B-SOUL DANCE ACADEMY"></svg>
+            <object-svg src="./images/logo.svg"></object-svg>
         </div>
         <nav id="welcome">
             <div>
                 <ul>
                     <li>
                         <a href="#">Aktuality</a>
-                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                        <object-svg src="./images/welcome-screen/underline.svg"></object-svg>
                     </li>
                     <li>
                         <a href="#">B-SOUL</a>
-                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                        <object-svg src="./images/welcome-screen/underline.svg"></object-svg>
                     </li>
                     <li>
                         <a href="#">Galerie</a>
-                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                        <object-svg src="./images/welcome-screen/underline.svg"></object-svg>
                     </li>
                     <li>
                         <a href="#">Kontakt</a>
-                        <svg src="./images/welcome-screen/underline.svg"></svg>
+                        <object-svg src="./images/welcome-screen/underline.svg"></object-svg>
                     </li>
                 </ul>
             </div>
@@ -51,22 +51,22 @@
             <ul>
                 <li class="facebook">
                     <a href="https://www.facebook.com/B-Soul-1716787281897235">
-                        <svg src="./images/welcome-screen/facebook-icon.svg"></svg>
+                        <object-svg src="./images/welcome-screen/facebook-icon.svg"></object-svg>
                     </a>
                 </li>
                 <li class="youtube">
                     <a href="https://www.youtube.com">
-                        <svg src="./images/welcome-screen/youtube-icon.svg"></svg>
+                        <object-svg src="./images/welcome-screen/youtube-icon.svg"></object-svg>
                     </a>
                 </li>
                 <li class="instagram">
                     <a href="https://www.instagram.com">
-                        <svg src="./images/welcome-screen/instagram-icon.svg"></svg>
+                        <object-svg src="./images/welcome-screen/instagram-icon.svg"></object-svg>
                     </a>
                 </li>
                 <li class="email">
                     <a href="#">
-                        <svg src="./images/welcome-screen/email-icon.svg"></svg>
+                        <object-svg src="./images/welcome-screen/email-icon.svg"></object-svg>
                     </a>
                 </li>
             </ul>
@@ -74,15 +74,15 @@
         <div id="joinUsPanel">
             <a href="#">
                 <div>
-                    <svg src="./images/welcome-screen/join-us.svg"></svg>
+                    <object-svg src="./images/welcome-screen/join-us.svg"></object-svg>
                 </div>
                 <div class="hidden hover">
-                    <svg src="./images/welcome-screen/join-us-hover.svg"></svg>
+                    <object-svg src="./images/welcome-screen/join-us-hover.svg"></object-svg>
                 </div>
             </a>
         </div>
         <video poster="./images/welcome-screen/background.jpg" id="bgvideo">
-            <source src="./images/welcome-screen/background-promo.mp4" type="video/mp4">
+            <!-- <source src="./images/welcome-screen/background-promo.mp4" type="video/mp4" /> -->
         </video>
     </header>
     <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -128,12 +128,9 @@
     <footer>
         <p>© B-SOUL Dance Acamedy 2016</p>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="./js/vendor/jquery-ui.min.js"></script>
-    <script src="./js/welcome-screen.js"></script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/jquery-ui.min.js"></script>
+    <script src="/js/welcome-screen.js"></script>
 </body>
 
 </html>

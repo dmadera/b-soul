@@ -1,9 +1,10 @@
 // replace svg tags with content of svg file
 var svgHandler = function() {
-    $("svg[src*='.svg']").each(function() {
-        var img = $(this);
-        $.get(img.attr("src"), function(svg) {
-            img.replaceWith(svg);
+    $("object-svg").each(function() {
+        console.log($(this));
+        var object = $(this);
+        $.get(object.attr("src"), function(svg) {
+            object.replaceWith(svg);
         }, 'text');
     });
 }
@@ -31,6 +32,8 @@ var joinUsHandler = function() {
         }
     );
 }
+
+
 
 $(joinUsHandler);
 $(svgHandler);
