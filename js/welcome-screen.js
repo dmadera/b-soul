@@ -11,8 +11,8 @@ var svgHandler = function() {
 var videoHandler = function() {
     var video = $('#bgvideo');
     setTimeout(function() {
-        // video.attr('loop', 'true');
-        // video[0].play();
+        video.attr('loop', 'true');
+        video[0].play();
     }, 3000);
 
     video.on('abort ended error paused', function() {
