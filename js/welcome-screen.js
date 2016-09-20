@@ -1,7 +1,6 @@
 // replace svg tags with content of svg file
 var svgHandler = function() {
     $("object-svg").each(function() {
-        console.log($(this));
         var object = $(this);
         $.get(object.attr("src"), function(svg) {
             object.replaceWith(svg);
