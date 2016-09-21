@@ -46,7 +46,7 @@ nav#welcome li a {
     margin: 5px 10px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.7em;
 }
 
 nav#welcome li a:hover {

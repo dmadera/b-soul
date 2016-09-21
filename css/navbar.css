@@ -26,7 +26,7 @@
 .navbar .nav > li > a {
     display: table;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-weight: 700;
     padding: 0 30px 0 30px;
     line-height: 120px;
@@ -63,7 +63,7 @@
 .navbar .dropdown-menu li a {
     display: block;
     padding: 13px 0px 13px 20px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-bottom: 1px solid #282828;
 }
 
