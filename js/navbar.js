@@ -37,7 +37,7 @@ $(function() {
     var prevScroll = 0;
     $(window).scroll(function() {
         var currentScroll = $(document).scrollTop();
-        var firstPageOffset = $('.first-page').offset()['top'] - 120;
+        var firstPageOffset = $('body section:first-child').offset()['top'] - 120;
         if (prevScroll < currentScroll && currentScroll > firstPageOffset) {
             navbarFix();
         } else if (prevScroll > currentScroll && currentScroll < firstPageOffset) {
