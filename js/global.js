@@ -8,7 +8,7 @@ $('a[href*="#"]').click(function(e) {
     if (id.length == 1 || !$(id).exists()) {
         return;
     }
-    $('body').animate({
+    $('html, body').animate({
         scrollTop: $(id).offset()['top'] - 120
     }, 400);
 });
