@@ -11,7 +11,6 @@ var navbarUnfix = function() {
     if (navbarPosition == 'fixed') {
         $('.navbar').css('position', 'absolute');
         $('.navbar').css('top', '100vh');
-        $('body').css('margin-top', '0px');
     }
 }
 
@@ -37,7 +36,7 @@ $(function() {
     var prevScroll = 0;
     $(window).scroll(function() {
         var currentScroll = $(document).scrollTop();
-        var firstPageOffset = $('body section:first-child').offset()['top'] - 120;
+        var firstPageOffset = $('.first-page').offset()['top'];
         if (prevScroll < currentScroll && currentScroll > firstPageOffset) {
             navbarFix();
         } else if (prevScroll > currentScroll && currentScroll < firstPageOffset) {

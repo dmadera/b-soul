@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link href="./css/global.css" rel="stylesheet">
     <link href="./css/navbar.css" rel="stylesheet">
-    <link href="./css/welcome-screen.css" rel="stylesheet">
-    <link href="./css/mentors-screen.css" rel="stylesheet">
+    <link href="./css/welcome.css" rel="stylesheet">
+    <link href="./css/mentors.css" rel="stylesheet">
+    <link href="./css/news.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div id="logo">
             <object-svg src="./images/logo.svg"></object-svg>
         </div>
@@ -31,16 +32,16 @@
             <div>
                 <ul>
                     <li>
-                        <a href="#">Aktuality</a>
+                        <a href="#news">Aktuality</a>
                     </li>
                     <li>
-                        <a href="#">B-SOUL</a>
+                        <a href="#about-us">B-SOUL</a>
                     </li>
                     <li>
-                        <a href="#">Galerie</a>
+                        <a href="#galery">Galerie</a>
                     </li>
                     <li>
-                        <a href="#">Kontakt</a>
+                        <a href="#contacts">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +81,7 @@
             </a>
         </div>
         <div id="showMore">
-            <a href="#mentors">
+            <a href="#news">
                 <object-svg src="./images/welcome-screen/show-more.svg"></object-svg>
             </a>
         </div>
@@ -95,7 +96,7 @@
             </a>
         </div>
         <ul class="nav pull-right">
-            <li><a href="#">Domů</a></li>
+            <li><a href="#home">Domů</a></li>
             <li><a href="#news">Aktuality</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">B-SOUL</a>
@@ -117,60 +118,96 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
-    <section id="mentors" class="page first-page">
+    <section id="news" class="page first-page">
+        <h3>Aktuality</h3>
+        <div class="container">
+            <div class="cell">
+                <div class="cell-wrapper">
+                    <h5>Aliquam hendrerit in sapien</h5>
+                    <p>Curabitur ornare dolor a est rhoncus, a varius felis lacinia. Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
+                    <div class="media">
+                        <!-- <img src="./images/welcome-screen/background.jpg" /> -->
+                        <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="cell right">
+                <div class="cell-wrapper ">
+                    <div class="cell-small ">
+                        <h6><a href="# ">Fusce aliquet hendrerit</a> <small>(15. září 2016)</small></h6>
+                        <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
+                    </div>
+                    <div class="cell-small ">
+                        <h6><a href="# ">Sed quis ornare lectus</a> <small>(8. září 2016)</small></h6>
+                        <p>Quisque tristique dui at tortor posuere mattis. Etiam hendrerit finibus porta. Fusce convallis sapien vel augue condimentum, sit amet fermentum nunc consequat.</p>
+                    </div>
+                    <div class="cell-small ">
+                        <h6><a href="# ">Aliquam molestie, nisl et interdum ultricies</a> <small>(23. srpna 2016)</small></h6>
+                        <p>Duis quam leo, iaculis id sem a, hendrerit tempus ipsum. Phasellus vestibulum et nisl at ultricies. Sed a gravida nisi. Maecenas ultricies pharetra dictum.</p>
+                    </div>
+                    <div class="cell-small ">
+                        <h6><a href="# ">Fusce ac leo nulla</a> <small>(10. srpna 2016)</small></h6>
+                        <p> Aliquam fringilla dapibus euismod. Class aptent taciti sociosqu ad litora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <section id="mentors" class="page">
         <h3>Lektoři</h3>
-        <div class="table">
-            <div class="cell">
-                <h5>Danny</h5>
-                <div class="inner-cell left"><img src="./images/mentors-screen/danny-wave-sad.jpg" alt="Smutný Danny" /></div>
-                <div class="inner-cell left hidden">
+        <div class="table ">
+            <div class="cell ">
+                <h4>Danny</h4>
+                <div class="inner-cell left "><img src="./images/mentors-screen/danny-wave-sad.jpg " alt="Smutný Danny " /></div>
+                <div class="inner-cell left hidden ">
                     <div>
-                        <h6>Danny</h6>
+                        <h5>Danny</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Dannym</a></div>
+                        <div class="btn-controls "><a href="# " class="button btn-small ">Více o Dannym</a></div>
                     </div>
                 </div>
-                <div class="inner-cell right"><img src="./images/mentors-screen/danny-wave-happy.jpg" alt="Šťastný Danny" /></div>
-                <div class="inner-cell right hidden"><img src="./images/mentors-screen/danny-happy.jpg" alt="Šťastný Danny" /></div>
+                <div class="inner-cell right "><img src="./images/mentors-screen/danny-wave-happy.jpg " alt="Šťastný Danny " /></div>
+                <div class="inner-cell right hidden "><img src="./images/mentors-screen/danny-happy.jpg " alt="Šťastný Danny " /></div>
             </div>
-            <div class="cell">
-                <h5>Maděrka</h5>
-                <div class="inner-cell left"><img src="./images/mentors-screen/maderka-wave-sad.jpg" alt="Smutná Maděrka" /></div>
-                <div class="inner-cell right"><img src="./images/mentors-screen/maderka-wave-happy.jpg" alt="Šťastná Maděrka" /></div>
-                <div class="inner-cell left hidden">
+            <div class="cell ">
+                <h4>Maděrka</h4>
+                <div class="inner-cell left "><img src="./images/mentors-screen/maderka-wave-sad.jpg " alt="Smutná Maděrka " /></div>
+                <div class="inner-cell right "><img src="./images/mentors-screen/maderka-wave-happy.jpg " alt="Šťastná Maděrka " /></div>
+                <div class="inner-cell left hidden ">
                     <div>
-                        <h6>Maděrka</h6>
+                        <h5>Maděrka</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Maděrce</a></div>
+                        <div class="btn-controls "><a href="# " class="button btn-small ">Více o Maděrce</a></div>
                     </div>
                 </div>
-                <div class="inner-cell right hidden"><img src="./images/mentors-screen/maderka-happy.jpg" alt="Šťastná Maděrka" /></div>
+                <div class="inner-cell right hidden "><img src="./images/mentors-screen/maderka-happy.jpg " alt="Šťastná Maděrka " /></div>
             </div>
-            <div class="cell">
-                <h5>Romča</h5>
-                <div class="inner-cell left"><img src="./images/mentors-screen/romca-wave-sad.jpg" alt="Smutná Romča" /></div>
-                <div class="inner-cell right"><img src="./images/mentors-screen/romca-wave-happy.jpg" alt="Šťastná Romča" /></div>
-                <div class="inner-cell left hidden">
+            <div class="cell ">
+                <h4>Romča</h4>
+                <div class="inner-cell left "><img src="./images/mentors-screen/romca-wave-sad.jpg " alt="Smutná Romča " /></div>
+                <div class="inner-cell right "><img src="./images/mentors-screen/romca-wave-happy.jpg " alt="Šťastná Romča " /></div>
+                <div class="inner-cell left hidden ">
                     <div>
-                        <h6>Romča</h6>
+                        <h5>Romča</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Romče</a></div>
+                        <div class="btn-controls "><a href="# " class="button btn-small ">Více o Romče</a></div>
                     </div>
                 </div>
-                <div class="inner-cell right hidden"><img src="./images/mentors-screen/romca-happy.jpg" alt="Šťastná Romča" /></div>
+                <div class="inner-cell right hidden "><img src="./images/mentors-screen/romca-happy.jpg " alt="Šťastná Romča " /></div>
             </div>
-            <div class="cell">
-                <h5>Lucaso</h5>
-                <div class="inner-cell left"><img src="./images/mentors-screen/lucaso-wave-sad.jpg" alt="Smutný Lucaso" /></div>
-                <div class="inner-cell right"><img src="./images/mentors-screen/lucaso-wave-happy.jpg" alt="Šťastný Lucaso" /></div>
-                <div class="inner-cell left hidden">
+            <div class="cell ">
+                <h4>Lucaso</h4>
+                <div class="inner-cell left "><img src="./images/mentors-screen/lucaso-wave-sad.jpg " alt="Smutný Lucaso " /></div>
+                <div class="inner-cell right "><img src="./images/mentors-screen/lucaso-wave-happy.jpg " alt="Šťastný Lucaso " /></div>
+                <div class="inner-cell left hidden ">
                     <div>
-                        <h6>Lucaso</h6>
+                        <h5>Lucaso</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Lucasovi</a></div>
+                        <div class="btn-controls "><a href="# " class="button btn-small ">Více o Lucasovi</a></div>
                     </div>
                 </div>
-                <div class="inner-cell right hidden"><img src="./images/mentors-screen/lucaso-happy.jpg" alt="Šťastný Lucaso" /></div>
+                <div class="inner-cell right hidden "><img src="./images/mentors-screen/lucaso-happy.jpg " alt="Šťastný Lucaso " /></div>
             </div>
         </div>
     </section>
@@ -193,12 +230,12 @@
     ga('create', 'UA-84479252-1', 'auto');
     ga('send', 'pageview');
     </script>
-    <script src="/js/vendor/jquery.min.js"></script>
-    <script src="/js/vendor/jquery-ui.min.js"></script>
-    <script src="/js/global.js"></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/welcome-screen.js"></script>
-    <script src="/js/mentor-screen.js"></script>
+    <script src="/js/vendor/jquery.min.js "></script>
+    <script src="/js/vendor/jquery-ui.min.js "></script>
+    <script src="/js/global.js "></script>
+    <script src="/js/navbar.js "></script>
+    <script src="/js/welcome-screen.js "></script>
+    <script src="/js/mentor-screen.js "></script>
 </body>
 
 </html>
