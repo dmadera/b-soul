@@ -15,8 +15,8 @@ var videoHandler = function() {
         video[0].play();
     }, 3000);
 
-    video.on('abort ended error paused', function() {
-        $(this).load();
+    video.on('abort ended error', function() {
+        video[0].load();
     });
 }
 

@@ -96,3 +96,15 @@ nav#welcome li a:hover {
     height: 100%;
     display: block;
 }
+
+#showMore {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+
+#showMore a:hover svg path {
+    fill: #a8835e;
+}

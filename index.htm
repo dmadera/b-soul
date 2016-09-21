@@ -12,6 +12,7 @@
     <title>B-SOUL Academy Liberec</title>
     <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/navbar.css" rel="stylesheet">
     <link href="./css/welcome-screen.css" rel="stylesheet">
     <link href="./css/mentors-screen.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -78,11 +79,45 @@
                 </div>
             </a>
         </div>
+        <div id="showMore">
+            <a href="#mentors">
+                <object-svg src="./images/welcome-screen/show-more.svg"></object-svg>
+            </a>
+        </div>
         <video poster="./images/welcome-screen/background.jpg" id="bgvideo">
             <source src="./images/welcome-screen/background-promo.mp4" type="video/mp4" />
         </video>
     </header>
-    <section id="mentors">
+    <nav class="navbar">
+        <div class="navbar-header pull-left">
+            <a href="#">
+                <object-svg src="./images/logo.svg"></object-svg>
+            </a>
+        </div>
+        <ul class="nav pull-right">
+            <li><a href="#">Domů</a></li>
+            <li><a href="#news">Aktuality</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">B-SOUL</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#about">O Nás</a></li>
+                    <li><a href="#mentors">Lektoři</a></li>
+                    <li><a href="#foto">Fotografie</a></li>
+                    <li><a href="#video">Videa</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Taneční lekce</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#singup">Jak se přihlásit</a></li>
+                    <li><a href="#schedule">Rozvrh</a></li>
+                    <li><a href="#price">Ceník</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section id="mentors" class="page first-page">
         <h3>Lektoři</h3>
         <div class="table">
             <div class="cell">
@@ -92,7 +127,7 @@
                     <div>
                         <h6>Danny</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-medium">Více o Dannym</a></div>
+                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Dannym</a></div>
                     </div>
                 </div>
                 <div class="inner-cell right"><img src="./images/mentors-screen/danny-wave-happy.jpg" alt="Šťastný Danny" /></div>
@@ -106,7 +141,7 @@
                     <div>
                         <h6>Maděrka</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-medium">Více o Maděrce</a></div>
+                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Maděrce</a></div>
                     </div>
                 </div>
                 <div class="inner-cell right hidden"><img src="./images/mentors-screen/maderka-happy.jpg" alt="Šťastná Maděrka" /></div>
@@ -119,7 +154,7 @@
                     <div>
                         <h6>Romča</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-medium">Více o Romče</a></div>
+                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Romče</a></div>
                     </div>
                 </div>
                 <div class="inner-cell right hidden"><img src="./images/mentors-screen/romca-happy.jpg" alt="Šťastná Romča" /></div>
@@ -132,53 +167,13 @@
                     <div>
                         <h6>Lucaso</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                        <div class="btn-controls"><a href="#" class="button btn-medium">Více o Lucasovi</a></div>
+                        <div class="btn-controls"><a href="#" class="button btn-small">Více o Lucasovi</a></div>
                     </div>
                 </div>
                 <div class="inner-cell right hidden"><img src="./images/mentors-screen/lucaso-happy.jpg" alt="Šťastný Lucaso" /></div>
             </div>
         </div>
     </section>
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#" id="navbar-logo"></a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse pull-right">
-        <ul id="mainNavbar" class="nav navbar-nav">
-            <li><a href="#">Domů</a></li>
-            <li><a href="#news">Aktuality</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    B-SOUL <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#about">O nás</a></li>
-                    <li><a href="#lectors">Lektoři</a></li>
-                    <li><a href="#foto">Fotografie</a></li>
-                    <li><a href="#video">Videa</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Taneční lekce <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#singup">Jak se přihlásit</a></li>
-                    <li><a href="#schedule">Rozvrh</a></li>
-                    <li><a href="#price">Ceník</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </div>
-    </div></nav> -->
     <footer>
         <p>© B-SOUL Dance Acamedy 2016</p>
     </footer>
@@ -200,6 +195,8 @@
     </script>
     <script src="/js/vendor/jquery.min.js"></script>
     <script src="/js/vendor/jquery-ui.min.js"></script>
+    <script src="/js/global.js"></script>
+    <script src="/js/navbar.js"></script>
     <script src="/js/welcome-screen.js"></script>
     <script src="/js/mentor-screen.js"></script>
 </body>

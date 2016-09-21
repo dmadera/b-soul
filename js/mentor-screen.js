@@ -4,13 +4,7 @@ var toggleMentorInfo = function(cell) {
 }
 
 $(function() {
-    $('#mentors .cell').hover(function() {
-        if (!$(this).hasClass('clicked')) {
-            toggleMentorInfo($(this));
-        }
-    });
-
     $('#mentors .cell').click(function() {
-        $(this).toggleClass('clicked');
+        toggleMentorInfo($(this));
     });
 });
