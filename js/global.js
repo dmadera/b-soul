@@ -9,7 +9,7 @@ $(function() {
         if (id.length == 1 || !$(id).exists()) {
             return;
         }
-        var customOffset = -120;
+        var customOffset = -100;
         if ($(id).hasClass('first-page')) {
             customOffset = 0;
         }
