@@ -109,8 +109,9 @@ header {
 
 footer {
     display: block;
-    height: 600px;
     margin: 0px auto;
+    text-align: center;
+    line-height: 100px;
 }
 
 h3 {
