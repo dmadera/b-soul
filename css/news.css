@@ -1,24 +1,3 @@
-#news .container {
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-
-#news .cell {
-    float: left;
-    width: 50%;
-    height: 100%;
-}
-
-#news .cell.right {
-    margin-right: -1px;
-}
-
-#news .cell-wrapper {
-    margin: 10px 30px 30px 30px;
-    height: 100%;
-}
-
 #news .media {
     margin-top: 10px;
 }

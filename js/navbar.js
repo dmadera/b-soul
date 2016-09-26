@@ -15,8 +15,8 @@ var navbarUnfix = function() {
 }
 
 $(function() {
-    $('.dropdown-toggle').click(function(e) {
-        e.preventDefault();
+    $('.dropdown-toggle').click(function(event) {
+        event.preventDefault();
         var dropdownMenu = $(this).parent().find('.dropdown-menu')
         var isVisible = dropdownMenu.is(':visible');
         $('.navbar .dropdown-menu:visible').hide();

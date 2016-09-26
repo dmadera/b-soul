@@ -2,15 +2,19 @@
     display: block;
     position: absolute;
     top: 100vh;
-    background: black;
     width: 100%;
     height: 100px;
     z-index: 9999;
     border-bottom: 1px solid #282828;
 }
 
+.navbar,
+.navbar * {
+    background: black;
+}
+
 .navbar-header {
-    padding: 10px 0px 10px 30px;
+    padding: 10px 0px 10px 20px;
 }
 
 .navbar-header a {
