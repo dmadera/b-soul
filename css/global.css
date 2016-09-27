@@ -49,7 +49,7 @@ body {
     margin: 0;
     background: #000;
     font-family: Montserrat;
-    min-width: 900px;
+    min-width: 1000px;
     overflow: auto;
     height: 100%;
     font-size: 1em;
@@ -178,6 +178,7 @@ iframe {
 .page {
     background: black;
     position: static;
+    min-height: 90vh;
 }
 
 .first-page {
