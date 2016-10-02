@@ -47,7 +47,7 @@ html {
 
 body {
     margin: 0;
-    background: #000;
+    background: black;
     font-family: Montserrat;
     min-width: 1000px;
     overflow: auto;
@@ -119,11 +119,15 @@ footer {
 }
 
 h3 {
+    border-top: 1px solid grey;
+    display: block;
     text-transform: uppercase;
     font-weight: 100;
     font-size: 4em;
     padding-top: 30px;
     padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h5 {
@@ -170,19 +174,26 @@ iframe {
 
 .container {
     position: relative;
-    height: 100%;
-    overflow: hidden;
     width: 100%;
 }
 
 .page {
-    background: black;
-    position: static;
-    min-height: 90vh;
+    background-color: black;
+    /*background: url('../images/logo-background.svg');
+    background-size: 300px auto;*/
+    background: url('../images/background1.jpg');
+    background-size: 550px auto;
+    background-repeat: repeat-x repeat-y;
+    position: relative;
+    height: 90vh;
 }
 
 .first-page {
     padding-top: 100px;
+}
+
+.first-page h3 {
+    border-top: none;
 }
 
 .cell {
