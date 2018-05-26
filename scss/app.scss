@@ -1,0 +1,42 @@
+@import '../assets/bootstrap/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald');
+
+a:not([href='']),
+a:focus,
+a:hover {
+  color: #005999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #07Cfff;
+}
+
+a[target="_blank"]:after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+}
+
+body {
+  min-width: 330px;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+}
+
+.page {
+  margin: 20px 0;
+}
+
+.page-anchor {
+  position: relative;
+  top: -35px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
