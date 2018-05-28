@@ -1,0 +1,24 @@
+{
+  "name": "b-soul",
+  "version": "1.0.0",
+  "description": "Web b-soul.cz",
+  "scripts": {
+    "sass-min": "node-sass --output-style compressed scss/app.scss css/app.min.css",
+    "server": "live-server",
+    "start": "npm run watch:sass | npm run server",
+    "build": "npm run sass-min",
+    "watch:sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmadera/b-soul.git"
+  },
+  "author": "Daniel Maděra",
+  "license": "MIT",
+  "homepage": "https://b-soul.cz",
+  "dependencies": {
+    "autoprefixer": "latest",
+    "node-sass": "latest",
+    "live-server": "latest"
+  }
+}
