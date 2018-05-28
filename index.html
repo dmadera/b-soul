@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <title>B-SOUL Academy Liberec</title>
     <meta name="description" content="B-SOUL Academy Liberec - taneční šḱola">
@@ -10,353 +10,326 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="css/app.css?v=1.0" rel="stylesheet">
     <link href="css/app.min.css?v=1.0.0" rel="stylesheet">
-</head>
+  </head>
 
-<body>
-    <div id="mediaPanel" style="display: none;">
-        <a href="#" class="close"></a>
-        <div class="prev"></div>
-        <div class="content">
-            <!-- <img src="img/welcome/background.jpg" /> -->
-            <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-        </div>
-        <div class="next"></div>
-    </div>
-    <header id="home">
-        <div id="logo">
-            <object-svg src="img/logo.svg"></object-svg>
-        </div>
-        <nav id="welcome">
-            <div>
-                <ul>
-                    <li>
-                        <a href="#news">Aktuality</a>
-                    </li>
-                    <li>
-                        <a href="#about">B-SOUL</a>
-                    </li>
-                    <li>
-                        <a href="#galery">Galerie</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="socialPanel">
-            <ul>
-                <li class="facebook">
-                    <a href="https://www.facebook.com/B-Soul-1716787281897235">
-                        <object-svg src="img/welcome/facebook-icon.svg"></object-svg>
-                    </a>
-                </li>
-                <li class="youtube">
-                    <a href="https://www.youtube.com">
-                        <object-svg src="img/welcome/youtube-icon.svg"></object-svg>
-                    </a>
-                </li>
-                <li class="instagram">
-                    <a href="https://www.instagram.com/bsoulcrew/">
-                        <object-svg src="img/welcome/instagram-icon.svg"></object-svg>
-                    </a>
-                </li>
-                <li class="email">
-                    <a href="#">
-                        <object-svg src="img/welcome/email-icon.svg"></object-svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="joinUsPanel">
-            <a href="#">
-                <div>
-                    <object-svg src="img/welcome/join-us.svg"></object-svg>
-                </div>
-                <div class="hidden hover">
-                    <object-svg src="img/welcome/join-us-hover.svg"></object-svg>
-                </div>
-            </a>
-        </div>
-        <div id="showMore">
-            <a href="#news">
-                <object-svg src="img/welcome/show-more.svg"></object-svg>
-            </a>
-        </div>
-        <video poster="img/welcome/background.jpg" id="bgvideo">
-            <source src="img/welcome/background-promo.mp4" type="video/mp4" />
-        </video>
-    </header>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top">
-        <a href="#" class="navbar-brand logo">
-          <h1 class="text-hide">B-SOUL Academy Liberec</h1>
-          <img src="img/logo.svg" alt="B-SOUL Academy Liberec" />
+  <body>
+    <header class="welcome">
+      <video class="bgvideo" poster="img/welcome/background.jpg">
+        <source src="img/welcome/background-promo.mp4" type="video/mp4" />
+      </video>
+      <a class="logo"></a>
+      <ul class="nav">
+        <li><a href="#news">Aktuality</a></li>
+        <li><a href="#about">B-SOUL</a></li>
+        <li><a href="#galery">Galerie</a></li>
+        <li><a href="#contacts">Kontakt</a></li>
+      </ul>
+      <ul class="social">
+        <li class="facebook">
+          <a href="https://www.facebook.com/B-Soul-1716787281897235">
+            <img src="img/welcome/facebook-icon.svg"></img>
+          </a>
+        </li>
+        <li class="youtube">
+          <a href="https://www.youtube.com">
+            <img src="img/welcome/youtube-icon.svg"></img>
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="https://www.instagram.com/bsoulcrew/">
+            <img src="img/welcome/instagram-icon.svg"></img>
+          </a>
+        </li>
+        <li class="email">
+          <a href="#">
+            <img src="img/welcome/email-icon.svg"></img>
+          </a>
+        </li>
+      </ul>
+      <div class="join-us">
+        <a href="#">
+          <div>
+            <img src="img/welcome/join-us.svg"></img>
+          </div>
+          <div class="hidden hover">
+            <img src="img/welcome/join-us-hover.svg"></img>
+          </div>
         </a>
-        <button class="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbar"
-                aria-controls="navbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#areal">Aktuality</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#areal">B-SOUL</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#about">O Nás</a></li>
-                    <li><a href="#mentors">Lektoři</a></li>
-                    <li><a href="#foto">Fotografie</a></li>
-                    <li><a href="#video">Videa</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#prices">Taneční lekce</a>
-              <ul class="dropdown-menu">
-                <li><a href="#singup">Jak se přihlásit</a></li>
-                <li><a href="#schedule">Rozvrh</a></li>
-                <li><a href="#price">Ceník</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+      <div class="show-more">
+        <a href="#news"><img src="img/welcome/show-more.svg"></img></a>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
+      <a href="#" class="navbar-brand logo">
+        <h1 class="text-hide">B-SOUL Academy Liberec</h1>
+        <img src="img/logo.svg" alt="B-SOUL Academy Liberec" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-controls="navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#areal">Aktuality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#areal">B-SOUL</a>
+            <ul class="dropdown-menu">
+              <li><a href="#about">O Nás</a></li>
+              <li><a href="#mentors">Lektoři</a></li>
+              <li><a href="#foto">Fotografie</a></li>
+              <li><a href="#video">Videa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prices">Taneční lekce</a>
+            <ul class="dropdown-menu">
+              <li><a href="#singup">Jak se přihlásit</a></li>
+              <li><a href="#schedule">Rozvrh</a></li>
+              <li><a href="#price">Ceník</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section id="news" class="page first-page">
-        <h3>Aktuality</h3>
-        <div class="container">
-            <div class="cell">
-                <div class="cell-wrapper">
-                    <h5>Fusce aliquet hendrerit<small>15. září 2016</small></h5>
-                    <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
-                    <div class="media">
-                        <!-- <img src="img/welcome/background.jpg" /> -->
-                        <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-                    </div>
-                </div>
+      <h3>Aktuality</h3>
+      <div class="container">
+        <div class="cell">
+          <div class="cell-wrapper">
+            <h5>Fusce aliquet hendrerit<small>15. září 2016</small></h5>
+            <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
+            <div class="media">
+              <!-- <img src="img/welcome/background.jpg" /> -->
+              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
             </div>
-            <div class="cell right">
-                <div class="cell-wrapper ">
-                    <div class="cell-small ">
-                        <h6><a href="# ">Fusce aliquet hendrerit<small>15. září 2016</small></a></h6>
-                        <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
-                    </div>
-                    <div class="cell-small ">
-                        <h6><a href="# ">Sed quis ornare lectus<small>8. září 2016</small></a></h6>
-                        <p>Quisque tristique dui at tortor posuere mattis. Etiam hendrerit finibus porta. Fusce convallis sapien vel augue condimentum, sit amet fermentum nunc consequat.</p>
-                    </div>
-                    <div class="cell-small ">
-                        <h6><a href="# ">Aliquam molestie, nisl et interdum ultricies<small>23. srpna 2016</small></a></h6>
-                        <p>Duis quam leo, iaculis id sem a, hendrerit tempus ipsum. Phasellus vestibulum et nisl at ultricies. Sed a gravida nisi. Maecenas ultricies pharetra dictum.</p>
-                    </div>
-                    <div class="cell-small ">
-                        <h6><a href="# ">Fusce ac leo nulla<small>10. srpna 2016</small></a></h6>
-                        <p> Aliquam fringilla dapibus euismod. Class aptent taciti sociosqu ad litora.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="clearfix"></div>
+        <div class="cell right">
+          <div class="cell-wrapper ">
+            <div class="cell-small ">
+              <h6><a href="# ">Fusce aliquet hendrerit<small>15. září 2016</small></a></h6>
+              <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
+            </div>
+            <div class="cell-small ">
+              <h6><a href="# ">Sed quis ornare lectus<small>8. září 2016</small></a></h6>
+              <p>Quisque tristique dui at tortor posuere mattis. Etiam hendrerit finibus porta. Fusce convallis sapien vel augue condimentum, sit amet fermentum nunc consequat.</p>
+            </div>
+            <div class="cell-small ">
+              <h6><a href="# ">Aliquam molestie, nisl et interdum ultricies<small>23. srpna 2016</small></a></h6>
+              <p>Duis quam leo, iaculis id sem a, hendrerit tempus ipsum. Phasellus vestibulum et nisl at ultricies. Sed a gravida nisi. Maecenas ultricies pharetra dictum.</p>
+            </div>
+            <div class="cell-small ">
+              <h6><a href="# ">Fusce ac leo nulla<small>10. srpna 2016</small></a></h6>
+              <p> Aliquam fringilla dapibus euismod. Class aptent taciti sociosqu ad litora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </section>
     <section class="page" id="about">
-        <h3>O Nás</h3>
+      <h3>O Nás</h3>
     </section>
     <section id="mentors" class="page">
-        <div class="container">
-            <h3>Lektoři</h3>
-            <div class="table">
-                <div class="cell ">
-                    <h4>Danny</h4>
-                    <div class="inner-cell left "><img src="img/mentors/danny-wave-sad.jpg " alt="Smutný Danny " /></div>
-                    <div class="inner-cell left hidden ">
-                        <div>
-                            <h5>Danny</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                            <div class="btn-controls "><a href="#danny" class="button btn-small ">Více o Dannym</a></div>
-                        </div>
-                    </div>
-                    <div class="inner-cell right "><img src="img/mentors/danny-wave-happy.jpg " alt="Šťastný Danny " /></div>
-                    <div class="inner-cell right hidden "><img src="img/mentors/danny-happy.jpg " alt="Šťastný Danny " /></div>
-                </div>
-                <div class="cell ">
-                    <h4>Maděrka</h4>
-                    <div class="inner-cell left "><img src="img/mentors/maderka-wave-sad.jpg " alt="Smutná Maděrka " /></div>
-                    <div class="inner-cell right "><img src="img/mentors/maderka-wave-happy.jpg " alt="Šťastná Maděrka " /></div>
-                    <div class="inner-cell left hidden ">
-                        <div>
-                            <h5>Maděrka</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                            <div class="btn-controls "><a href="#maderka" class="button btn-small ">Více o Maděrce</a></div>
-                        </div>
-                    </div>
-                    <div class="inner-cell right hidden "><img src="img/mentors/maderka-happy.jpg " alt="Šťastná Maděrka " /></div>
-                </div>
-                <div class="cell ">
-                    <h4>Romča</h4>
-                    <div class="inner-cell left "><img src="img/mentors/romca-wave-sad.jpg " alt="Smutná Romča " /></div>
-                    <div class="inner-cell right "><img src="img/mentors/romca-wave-happy.jpg " alt="Šťastná Romča " /></div>
-                    <div class="inner-cell left hidden ">
-                        <div>
-                            <h5>Romča</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                            <div class="btn-controls "><a href="#romca" class="button btn-small ">Více o Romče</a></div>
-                        </div>
-                    </div>
-                    <div class="inner-cell right hidden "><img src="img/mentors/romca-happy.jpg " alt="Šťastná Romča " /></div>
-                </div>
-                <div class="cell ">
-                    <h4>Lucaso</h4>
-                    <div class="inner-cell left "><img src="img/mentors/lucaso-wave-sad.jpg " alt="Smutný Lucaso " /></div>
-                    <div class="inner-cell right "><img src="img/mentors/lucaso-wave-happy.jpg " alt="Šťastný Lucaso " /></div>
-                    <div class="inner-cell left hidden ">
-                        <div>
-                            <h5>Lucaso</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
-                            <div class="btn-controls "><a href="#lucaso" class="button btn-small ">Více o Lucasovi</a></div>
-                        </div>
-                    </div>
-                    <div class="inner-cell right hidden "><img src="img/mentors/lucaso-happy.jpg " alt="Šťastný Lucaso " /></div>
-                </div>
+      <div class="container">
+        <h3>Lektoři</h3>
+        <div class="table">
+          <div class="cell ">
+            <h4>Danny</h4>
+            <div class="inner-cell left "><img src="img/mentors/danny-wave-sad.jpg " alt="Smutný Danny " /></div>
+            <div class="inner-cell left hidden ">
+              <div>
+                <h5>Danny</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
+                <div class="btn-controls "><a href="#danny" class="button btn-small ">Více o Dannym</a></div>
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="page mentor-info" id="danny">
-        <div class="container">
-            <h3>Danny</h3>
-            <div class="cell profile">
-                <div class="cell">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                </div>
-                <div class="cell right">
-                    <div class="wrapper">
-                        <img src="img/mentors/danny-profile.jpg" />
-                    </div>
-                </div>
+            <div class="inner-cell right "><img src="img/mentors/danny-wave-happy.jpg " alt="Šťastný Danny " /></div>
+            <div class="inner-cell right hidden "><img src="img/mentors/danny-happy.jpg " alt="Šťastný Danny " /></div>
+          </div>
+          <div class="cell ">
+            <h4>Maděrka</h4>
+            <div class="inner-cell left "><img src="img/mentors/maderka-wave-sad.jpg " alt="Smutná Maděrka " /></div>
+            <div class="inner-cell right "><img src="img/mentors/maderka-wave-happy.jpg " alt="Šťastná Maděrka " /></div>
+            <div class="inner-cell left hidden ">
+              <div>
+                <h5>Maděrka</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
+                <div class="btn-controls "><a href="#maderka" class="button btn-small ">Více o Maděrce</a></div>
+              </div>
             </div>
-            <div class="cell right">
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="play-btn"></div>
-                    <div class="content hidden">
-                        <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="content hidden">
-                        <img src="img/welcome/background.jpg" />
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="play-btn"></div>
-                    <div class="content hidden">
-                        <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="content hidden">
-                        <img src="img/welcome/background.jpg" />
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="play-btn"></div>
-                    <div class="content hidden">
-                        <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/welcome/background.jpg" />
-                    <div class="content hidden">
-                        <img src="img/welcome/background.jpg" />
-                    </div>
-                </div>
+            <div class="inner-cell right hidden "><img src="img/mentors/maderka-happy.jpg " alt="Šťastná Maděrka " /></div>
+          </div>
+          <div class="cell ">
+            <h4>Romča</h4>
+            <div class="inner-cell left "><img src="img/mentors/romca-wave-sad.jpg " alt="Smutná Romča " /></div>
+            <div class="inner-cell right "><img src="img/mentors/romca-wave-happy.jpg " alt="Šťastná Romča " /></div>
+            <div class="inner-cell left hidden ">
+              <div>
+                <h5>Romča</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
+                <div class="btn-controls "><a href="#romca" class="button btn-small ">Více o Romče</a></div>
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="page" id="contacts">
-        <h3>Kontakt</h3>
-        <div class="contacts pull-left">
-            <ul>
-                <li>B-SOUL Academy Liberec</li>
-                <li>Dr. Milady Horákové 39, Liberec</li>
-                <li><a href="mailto:info@b-soul.cz">info@b-soul.cz</a></li>
-                <li>(+420) 777 777 777</li>
-            </ul>
-        </div>
-        <div class="mentor pull-left">
-            <div class="face pull-left">
-                <img src="img/mentors/maderka-face.png" />
+            <div class="inner-cell right hidden "><img src="img/mentors/romca-happy.jpg " alt="Šťastná Romča " /></div>
+          </div>
+          <div class="cell ">
+            <h4>Lucaso</h4>
+            <div class="inner-cell left "><img src="img/mentors/lucaso-wave-sad.jpg " alt="Smutný Lucaso " /></div>
+            <div class="inner-cell right "><img src="img/mentors/lucaso-wave-happy.jpg " alt="Šťastný Lucaso " /></div>
+            <div class="inner-cell left hidden ">
+              <div>
+                <h5>Lucaso</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ante, eu fringilla nisl. Proin ultricies orci eu elit iaculis, in sollicitudin tortor gravida. Nullam et nisl condimentum, molestie urna in, aliquam orci.</p>
+                <div class="btn-controls "><a href="#lucaso" class="button btn-small ">Více o Lucasovi</a></div>
+              </div>
             </div>
-            <div class="info pull-left">
-                <ul>
-                    <li>Maděrka</li>
-                    <li>Lucie Maděrová</li>
-                    <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
-                    <li>(+420) 777 777 777</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mentor pull-left">
-            <div class="face pull-left">
-                <img src="img/mentors/danny-face.png" />
-            </div>
-            <div class="info pull-left">
-                <ul>
-                    <li>Danny</li>
-                    <li>Daniel Jakubec</li>
-                    <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
-                    <li>(+420) 777 777 777</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mentor pull-left">
-            <div class="face pull-left">
-                <img src="img/mentors/lucaso-face.png" />
-            </div>
-            <div class="info pull-left">
-                <ul>
-                    <li>Lucaso</li>
-                    <li>Lukáš Jakubec</li>
-                    <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
-                    <li>(+420) 777 777 777</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mentor pull-left">
-            <div class="face pull-left">
-                <img src="img/mentors/romca-face.png" />
-            </div>
-            <div class="info pull-left">
-                <ul>
-                    <li>Romča</li>
-                    <li>Romana Barešová</li>
-                    <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
-                    <li>(+420) 777 777 777</li>
-                </ul>
-            </div>
+            <div class="inner-cell right hidden "><img src="img/mentors/lucaso-happy.jpg " alt="Šťastný Lucaso " /></div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="page mentor-info" id="danny">
+      <div class="container">
+        <h3>Danny</h3>
+        <div class="cell profile">
+          <div class="cell">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div class="cell right">
+            <div class="wrapper">
+              <img src="img/mentors/danny-profile.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="cell right">
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="play-btn"></div>
+            <div class="content hidden">
+              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="content hidden">
+              <img src="img/welcome/background.jpg" />
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="play-btn"></div>
+            <div class="content hidden">
+              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="content hidden">
+              <img src="img/welcome/background.jpg" />
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="play-btn"></div>
+            <div class="content hidden">
+              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/welcome/background.jpg" />
+            <div class="content hidden">
+              <img src="img/welcome/background.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" id="contacts">
+      <h3>Kontakt</h3>
+      <div class="contacts pull-left">
+        <ul>
+          <li>B-SOUL Academy Liberec</li>
+          <li>Dr. Milady Horákové 39, Liberec</li>
+          <li><a href="mailto:info@b-soul.cz">info@b-soul.cz</a></li>
+          <li>(+420) 777 777 777</li>
+        </ul>
+      </div>
+      <div class="mentor pull-left">
+        <div class="face pull-left">
+          <img src="img/mentors/maderka-face.png" />
+        </div>
+        <div class="info pull-left">
+          <ul>
+            <li>Maděrka</li>
+            <li>Lucie Maděrová</li>
+            <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
+            <li>(+420) 777 777 777</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mentor pull-left">
+        <div class="face pull-left">
+          <img src="img/mentors/danny-face.png" />
+        </div>
+        <div class="info pull-left">
+          <ul>
+            <li>Danny</li>
+            <li>Daniel Jakubec</li>
+            <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
+            <li>(+420) 777 777 777</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mentor pull-left">
+        <div class="face pull-left">
+          <img src="img/mentors/lucaso-face.png" />
+        </div>
+        <div class="info pull-left">
+          <ul>
+            <li>Lucaso</li>
+            <li>Lukáš Jakubec</li>
+            <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
+            <li>(+420) 777 777 777</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mentor pull-left">
+        <div class="face pull-left">
+          <img src="img/mentors/romca-face.png" />
+        </div>
+        <div class="info pull-left">
+          <ul>
+            <li>Romča</li>
+            <li>Romana Barešová</li>
+            <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
+            <li>(+420) 777 777 777</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
     <footer>
-        <p>© B-SOUL Acamedy Liberec 2016</p>
+      <p>© B-SOUL Acamedy Liberec 2016</p>
     </footer>
     <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/jquery-3.3.1.min.js"></script>
     <!--<script src="js/ga.js"></script>-->
-</body>
+  </body>
 </html>
