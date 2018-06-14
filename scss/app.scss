@@ -1,15 +1,13 @@
 @import '../assets/bootstrap/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald|Montserrat');
+$hover-color: #a8835e;
 
 a:not([href='']),
 a:focus,
 a:hover {
-  color: #005999;
+  //color: #005999;
+  color: $hover-color;
   text-decoration: none;
-}
-
-a:hover {
-  color: #07Cfff;
 }
 
 a[target="_blank"]:after {
@@ -21,10 +19,19 @@ body {
   min-width: 330px;
   background-color: black;
   font-family: Montserrat;
+  letter-spacing: 3px !important;
+  font-size: 17px !important;
+  color: #f2f2f2;
 }
 
 .page {
-  margin: 20px 0;
+  background-color: black;
+  //min-height: 90vh;
+  margin-bottom: 100px;
+
+  &:not(.first-page) {
+    margin: 20px 0;
+  }
 }
 
 .page-anchor {
@@ -66,11 +73,10 @@ h3 {
   display: block;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 4em;
-  padding-top: 30px;
+  font-size: 3em;
+  padding-top: 15px;
   padding-left: 30px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  color: white;
 }
 
 h5 {
@@ -87,8 +93,68 @@ iframe {
   border: 0;
 }
 
-.navbar.top {
-  margin-top: 100vh;
+.navbar {
+  background-color: #000;
+  padding: 5px 10px 5px 10px;
+
+  .navbar-brand {
+    padding: 0;
+    height: 80px;
+
+    svg {
+      height: 80px;
+      width: 80px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    svg * {
+      fill: #fff;
+    }
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 8px 25px 8px 25px;
+
+    &:not(:last-child) {
+      //border-right: 1px solid grey;
+    }
+
+    .nav-link {
+      color: grey;
+
+      &.active {
+        color: white;
+      }
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: #000;
+      border: 1px solid grey;
+      border-top: 0;
+      border-radius: 0;
+      width: 100%;
+
+      .dropdown-item {
+        color: #fff;
+
+        &:hover {
+          background: $hover-color;
+        }
+      }
+
+
+    }
+  }
 }
 
 @import 'welcome.scss';
+@import 'signup.scss';

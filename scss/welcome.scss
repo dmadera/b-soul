@@ -1,35 +1,35 @@
 .welcome {
-  padding: 30px 120px 0 320px;
+   padding: 20px 30px;
 
   .bgvideo {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1000;
     opacity: .5;
   }
 
   .logo {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 17%;
-
-    svg path {
-      fill: #ffffff;
-    }
+    display: inline-block;
+    width: 17vw;
+    height: 17vw;
+    background-color: #fff;
+    -webkit-mask-image: url('../img/logo.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
   }
 
   .nav {
+    width: 74vw;
+    height: auto;
+    text-align: center;
+    vertical-align: top;
     display: inline-block;
-    overflow: hidden;
-    list-style-type: none;
-    padding: 0;
 
     li {
-      float: left;
-      margin: 0 20px;
+      display: inline-block;
       padding: 5px 5px;
 
       a {
@@ -39,30 +39,29 @@
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.4em;
+        color: #fff;
 
-        :hover {
-           color: #a8835e;
+        &:hover {
+          color: $hover-color;
         }
       }
-    }
+  }
   }
 
   .social {
-    position: absolute;
-    top: 25px;
-    right: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
     width: 65px;
-    list-style-type: none;
-    margin: 0;
 
     li {
       width: 50px;
       height: 65px;
       margin: 0px auto;
-      padding-bottom: 7px;
 
-      :hover {
-        width: 65px;
+      &:hover {
+        margin-top: -7px;
+        width: 60px;
 
         svg [fill='#c0bfbf'] {
           fill: #a8835e;
@@ -77,10 +76,10 @@
 
   .join-us {
     position: absolute;
-    bottom: 25px;
-    right: 25px;
-    width: 17%;
-    height: 300px;
+    bottom: 20px;
+    right: 30px;
+    width: 17vw;
+    height: 17vw;
 
     a {
       width: 100%;
@@ -100,8 +99,13 @@
     position: absolute;
     bottom: 30px;
     left: 0;
-    width: 100%;
+    width: 30px;
     height: 40px;
+    text-align: center;
+
+    img {
+      width: 60px;
+    }
 
     a:hover svg path {
       fill: #a8835e;

@@ -20,20 +20,5 @@ var videoHandler = function() {
     });
 }
 
-var joinUsHandler = function() {
-    $('#joinUsPanel a').hover(function() {
-            $('#joinUsPanel div:not(.hover)').hide();
-            $('#joinUsPanel div.hover').show();
-        },
-        function() {
-            $('#joinUsPanel div.hover').hide();
-            $('#joinUsPanel div:not(.hover)').show();
-        }
-    );
-}
-
-
-
-$(joinUsHandler);
 $(svgHandler);
 $(videoHandler);

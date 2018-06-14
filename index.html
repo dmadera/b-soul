@@ -9,40 +9,42 @@
     <meta name="author" content="Daniel Maděra">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="css/app.css?v=1.0" rel="stylesheet">
-    <link href="css/app.min.css?v=1.0.0" rel="stylesheet">
+    <!--<link href="css/app.min.css?v=1.0.0" rel="stylesheet">-->
   </head>
 
   <body>
     <header class="welcome">
       <video class="bgvideo" poster="img/welcome/background.jpg">
-        <source src="img/welcome/background-promo.mp4" type="video/mp4" />
+        <!--<source src="img/welcome/background-promo.mp4" type="video/mp4" />-->
       </video>
       <a class="logo"></a>
-      <ul class="nav">
-        <li><a href="#news">Aktuality</a></li>
-        <li><a href="#about">B-SOUL</a></li>
-        <li><a href="#galery">Galerie</a></li>
-        <li><a href="#contacts">Kontakt</a></li>
-      </ul>
-      <ul class="social">
+      <div class="nav">
+        <ul class="list-inline">
+          <li><a href="#news">Aktuality</a></li>
+          <li><a href="#about">B-SOUL</a></li>
+          <li><a href="#galery">Galerie</a></li>
+          <li><a href="#contacts">Kontakt</a></li>
+        </ul>
+      </div>
+      <ul class="social list-unstyled">
         <li class="facebook">
           <a href="https://www.facebook.com/B-Soul-1716787281897235">
-            <img src="img/welcome/facebook-icon.svg"></img>
+            <svg src="img/welcome/facebook-icon.svg"></svg>
           </a>
         </li>
         <li class="youtube">
-          <a href="https://www.youtube.com">
-            <img src="img/welcome/youtube-icon.svg"></img>
+          <a href="https://www.youtube.com/channel/UCixouo9V5FFpMQpi1G7J1uw?view_as=subscriber">
+            <svg src="img/welcome/youtube-icon.svg"></svg>
           </a>
         </li>
         <li class="instagram">
           <a href="https://www.instagram.com/bsoulcrew/">
-            <img src="img/welcome/instagram-icon.svg"></img>
+            <svg src="img/welcome/instagram-icon.svg"></svg>
           </a>
         </li>
-        <li class="email">
+        <li class="mailto:info@b-soul.cz">
           <a href="#">
-            <img src="img/welcome/email-icon.svg"></img>
+            <svg src="img/welcome/email-icon.svg"></svg>
           </a>
         </li>
       </ul>
@@ -54,10 +56,10 @@
         <a href="#news"><img src="img/welcome/show-more.svg"></img></a>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
-      <a href="#" class="navbar-brand logo">
+    <nav class="navbar navbar-expand-lg navbar-dark top">
+      <a href="#" class="navbar-brand">
+        <svg src="img/logo.svg" alt="B-SOUL Academy Liberec"></svg>
         <h1 class="text-hide">B-SOUL Academy Liberec</h1>
-        <img src="img/logo.svg" alt="B-SOUL Academy Liberec" />
       </a>
       <button class="navbar-toggler navbar-toggler-right"
               type="button"
@@ -70,17 +72,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#areal">Aktuality</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#areal">B-SOUL</a>
-            <ul class="dropdown-menu">
-              <li><a href="#about">O Nás</a></li>
-              <li><a href="#mentors">Lektoři</a></li>
-              <li><a href="#foto">Fotografie</a></li>
-              <li><a href="#video">Videa</a></li>
-            </ul>
+          <!--<li class="nav-item active">-->
+          <!--<a class="nav-link" href="#areal">Aktuality</a>-->
+          <!--</li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                                data-toggle="dropdown" href="#" role="button"
+                                                                                aria-haspopup="true" aria-expanded="false">B-SOUL</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#about">O Nás</a>
+              <a class="dropdown-item" href="#mentors">Lektoři</a>
+              <a class="dropdown-item" href="#mentors">Crew</a>
+              <a class="dropdown-item" href="#foto">Foto</a>
+              <a class="dropdown-item" href="https://www.youtube.com/channel/UCixouo9V5FFpMQpi1G7J1uw">Videa</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#prices">Taneční lekce</a>
@@ -96,47 +101,24 @@
         </ul>
       </div>
     </nav>
-    <section id="news" class="page first-page">
-      <h3>Aktuality</h3>
-      <div class="container">
-        <div class="cell">
-          <div class="cell-wrapper">
-            <h5>Fusce aliquet hendrerit<small>15. září 2016</small></h5>
-            <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
-            <div class="media">
-              <!-- <img src="img/welcome/background.jpg" /> -->
-              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-            </div>
+    <section class="page first-page" id="about">
+      <h3>O Nás</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/onas1.jpg" />
           </div>
-        </div>
-        <div class="cell right">
-          <div class="cell-wrapper ">
-            <div class="cell-small ">
-              <h6><a href="# ">Fusce aliquet hendrerit<small>15. září 2016</small></a></h6>
-              <p>Aliquam hendrerit in sapien nec ornare. Fusce aliquet hendrerit metus et feugiat.</p>
-            </div>
-            <div class="cell-small ">
-              <h6><a href="# ">Sed quis ornare lectus<small>8. září 2016</small></a></h6>
-              <p>Quisque tristique dui at tortor posuere mattis. Etiam hendrerit finibus porta. Fusce convallis sapien vel augue condimentum, sit amet fermentum nunc consequat.</p>
-            </div>
-            <div class="cell-small ">
-              <h6><a href="# ">Aliquam molestie, nisl et interdum ultricies<small>23. srpna 2016</small></a></h6>
-              <p>Duis quam leo, iaculis id sem a, hendrerit tempus ipsum. Phasellus vestibulum et nisl at ultricies. Sed a gravida nisi. Maecenas ultricies pharetra dictum.</p>
-            </div>
-            <div class="cell-small ">
-              <h6><a href="# ">Fusce ac leo nulla<small>10. srpna 2016</small></a></h6>
-              <p> Aliquam fringilla dapibus euismod. Class aptent taciti sociosqu ad litora.</p>
-            </div>
+          <div class="col-4">
+            Jsme parta čtyř mládím vonících a kreativních přátel žijící streetovým tancem. Rozhodli jsme se, že vše, co jsme se naučili, chceme předávat dále, a tak jsme vytvořili B-soul academy. Původně se jednalo o taneční "crew" s názvem B-soul, která se na taneční scéně pohybuje více než pět let a za ty roky se zformovala do dnešní podoby. Naším hlavním záměrem není naučit vás pouze taneční kroky, ale chceme vám ukázat, jak funguje streetová komunita a předat všechny znalosti a zkušenosti jimiž jsme přeplněni. Jednoduše řečeno, to co nás dovedlo až sem, co nás baví, čím žijeme a co milujeme, chceme předat ostatním následovníkům, díky nímž máme energii a chuť dělat to, co děláme. A proto nechceme pouze inspirovat, ale také být inspirování a to právě vámi.
+          </div>
+          <div class="col-4">
+            <img src="img/onas.jpg" />
           </div>
         </div>
       </div>
-      <div class="clearfix"></div>
-    </section>
-    <section class="page" id="about">
-      <h3>O Nás</h3>
     </section>
     <section id="mentors" class="page">
-      <div class="container">
+      <div class="container-fluid">
         <h3>Lektoři</h3>
         <div class="table">
           <div class="cell ">
@@ -195,61 +177,46 @@
       </div>
     </section>
     <section class="page mentor-info" id="danny">
+    </section>
+    <section class="page signup" id="signup">
+      <h3>Přihláška</h3>
       <div class="container">
-        <h3>Danny</h3>
-        <div class="cell profile">
-          <div class="cell">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+        <div class="row">
+          <div class="col-12">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
           </div>
-          <div class="cell right">
-            <div class="wrapper">
-              <img src="img/mentors/danny-profile.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="cell right">
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="play-btn"></div>
-            <div class="content hidden">
-              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="content hidden">
-              <img src="img/welcome/background.jpg" />
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="play-btn"></div>
-            <div class="content hidden">
-              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="content hidden">
-              <img src="img/welcome/background.jpg" />
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="play-btn"></div>
-            <div class="content hidden">
-              <iframe src="https://www.youtube.com/embed/KEfNeVgPcsc?showinfo=0"></iframe>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/welcome/background.jpg" />
-            <div class="content hidden">
-              <img src="img/welcome/background.jpg" />
+          <div class="col-12">
+            <div class="logo">
+            <svg src="img/logo.svg"></svg>
             </div>
           </div>
         </div>
@@ -257,73 +224,57 @@
     </section>
     <section class="page" id="contacts">
       <h3>Kontakt</h3>
-      <div class="contacts pull-left">
-        <ul>
-          <li>B-SOUL Academy Liberec</li>
-          <li>Dr. Milady Horákové 39, Liberec</li>
-          <li><a href="mailto:info@b-soul.cz">info@b-soul.cz</a></li>
-          <li>(+420) 777 777 777</li>
-        </ul>
-      </div>
-      <div class="mentor pull-left">
-        <div class="face pull-left">
-          <!--<img src="img/mentors/maderka-face.png" />-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>B-SOUL Academy Liberec</li>
+              <li>Dr. Milady Horákové 39, Liberec</li>
+              <li><a href="mailto:info@b-soul.cz">info@b-soul.cz</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="info pull-left">
-          <ul>
-            <li>Maděrka</li>
-            <li>Lucie Maděrová</li>
-            <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
-            <li>(+420) 777 777 777</li>
-          </ul>
+        <div class="row">
+          <div class="col-3">
+            <ul>
+              <li>Maděrka</li>
+              <li>Lucie Maděrová</li>
+              <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
+              <li>(+420) 602 666 095</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>Danny</li>
+              <li>Daniel Jakubec</li>
+              <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
+              <li>(+420) 774 235 852</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>Lucaso</li>
+              <li>Lukáš Jakubec</li>
+              <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
+              <li>(+420) 774 235 853</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>Romča</li>
+              <li>Romana Barešová</li>
+              <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
+              <li>(+420) 737 871 992</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="mentor pull-left">
-        <div class="face pull-left">
-          <!--<img src="img/mentors/danny-face.png" />-->
-        </div>
-        <div class="info pull-left">
-          <ul>
-            <li>Danny</li>
-            <li>Daniel Jakubec</li>
-            <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
-            <li>(+420) 777 777 777</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mentor pull-left">
-        <div class="face pull-left">
-          <!--<img src="img/mentors/lucaso-face.png" />-->
-        </div>
-        <div class="info pull-left">
-          <ul>
-            <li>Lucaso</li>
-            <li>Lukáš Jakubec</li>
-            <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
-            <li>(+420) 777 777 777</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mentor pull-left">
-        <div class="face pull-left">
-          <!--<img src="img/mentors/romca-face.png" />-->
-        </div>
-        <div class="info pull-left">
-          <ul>
-            <li>Romča</li>
-            <li>Romana Barešová</li>
-            <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
-            <li>(+420) 777 777 777</li>
-          </ul>
-        </div>
-      </div>
       </div>
     </section>
     <footer>
       <p>© B-SOUL Acamedy Liberec 2016</p>
     </footer>
-    <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/jquery-3.3.1.min.js"></script>
-    <!--<script src="js/ga.js"></script>-->
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="js/global.js"></script>
   </body>
 </html>
