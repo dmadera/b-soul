@@ -9,7 +9,22 @@ $(function() {
           img.replaceWith(svg);
       }, 'text');
     });
+    // if scroll is on top, hide navbar
+    $('#mainNav').hide();
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+      var navbar = $('#mainNav');
+      if(scroll > 50) {
+        navbar.show();
+      } else {
+        navbar.hide();
+      }
+    });
 
+
+    $(".datepicker").datepicker($.datepicker.regional["cs"]);
+    $('.datepicker').datepicker({
+    });
     //$('#mediaPanel a.close').click(function() {
         //$('#mediaPanel .content').empty();
         //$('#mediaPanel').hide();
@@ -27,5 +42,4 @@ $(function() {
             //event.stopPropagation();
         //}
     //});
-
 });

@@ -8,6 +8,9 @@
     <meta name="keywords" content="B-SOUL, tanec, street, poppin, freestyle">
     <meta name="author" content="Daniel Maděra">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="assets/jquery-ui/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="assets/jquery-ui/jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/app.css?v=1.0" rel="stylesheet">
     <!--<link href="css/app.min.css?v=1.0.0" rel="stylesheet">-->
   </head>
@@ -56,7 +59,7 @@
         <a href="#news"><img src="img/welcome/show-more.svg"></img></a>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark top" id="mainNav">
       <a href="#" class="navbar-brand">
         <svg src="img/logo.svg" alt="B-SOUL Academy Liberec"></svg>
         <h1 class="text-hide">B-SOUL Academy Liberec</h1>
@@ -179,55 +182,115 @@
     <section class="page mentor-info" id="danny">
     </section>
     <section class="page signup" id="signup">
-      <h3>Přihláška</h3>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-            </form>
+            <h3>Přihláška</h3>
           </div>
-          <div class="col-12">
-            <div class="logo">
-            <svg src="img/logo.svg"></svg>
+        </div>
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstnameInput">Jméno</label>
+                    <input type="text" class="form-control" id="firstnameInput" placeholder="Jan" required />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastnameInput">Přijmení</label>
+                    <input type="text" class="form-control" id="lastnameInput" placeholder="Novák" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6 date" data-provide="datepicker">
+                    <label for="birthdateInput">Datum narození</label>
+                    <input type="text" class="form-control datepicker" id="birthdateInput" placeholder="1. 1. 2003" required />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="birthnumInput">Rodné číslo</label>
+                    <input type="text" class="form-control" id="birthnumInput" placeholder="123456/7890" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="streetInput">Ulice</label>
+                    <input type="text" class="form-control" id="streeInput" placeholder="Jahodová 13" required />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="cityInput">Město</label>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Liberec" required />
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="zipInput">PSČ</label>
+                    <input type="text" class="form-control" id="zipInput" placeholder="PSČ" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phoneInput">Telefon</label>
+                    <input type="tel" class="form-control" id="phoneInput" placeholder="+420 123 456 789" required />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="test@example.com" required />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label for="paymentSelect">Způsob platby členství</label>
+                    <select class="form-control" id="paymentSelect" required />
+                      <option selected disabled>prosím vyberte...</option>
+                      <option value="bank">přes účet</option>
+                      <option value="cash">hotově</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="accordion representative" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h5 class="mb-0">
+                        Zákonný zástupce
+                        <i class="fas fa-caret-down"></i>
+                        <small class="float-md-right">vyplňte pouze jste-li mladší 18 let</small>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+                      <div class="card-body">
+                        <div class="form-group">
+                          <label for="namerepInput">Jméno a příjmení zákonného zástupce</label>
+                          <input type="text" class="form-control" id="namerepInput" placeholder="Petr Novák">
+                        </div>
+                        <div class="form-group">
+                          <label for="phonerepInput">Telefon zákonného zástupce</label>
+                          <input type="tel" class="form-control" id="phonerepInput" placeholder="+420 123 456 780">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailrepInput">Email zákonného zástupce</label>
+                          <input type="email" class="form-control" id="emailrepInput" placeholder="test@example.com">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block submit">Odeslat</button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
     <section class="page" id="contacts">
-      <h3>Kontakt</h3>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <ul>
+            <h3>Kontakt</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled">
               <li>B-SOUL Academy Liberec</li>
               <li>Dr. Milady Horákové 39, Liberec</li>
               <li><a href="mailto:info@b-soul.cz">info@b-soul.cz</a></li>
@@ -236,36 +299,56 @@
         </div>
         <div class="row">
           <div class="col-3">
-            <ul>
-              <li>Maděrka</li>
-              <li>Lucie Maděrová</li>
-              <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
-              <li>(+420) 602 666 095</li>
-            </ul>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/mentors/maderka-contact.png" />
+              </div>
+              <ul class="col-8">
+                <li>Maděrka</li>
+                <li>Lucie Maděrová</li>
+                <li><a href="mailto:maderka@b-soul.cz">maderka@b-soul.cz</a></li>
+                <li>(+420) 602 666 095</li>
+              </ul>
+            </div>
           </div>
           <div class="col-3">
-            <ul>
-              <li>Danny</li>
-              <li>Daniel Jakubec</li>
-              <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
-              <li>(+420) 774 235 852</li>
-            </ul>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/mentors/danny-contact.png" />
+              </div>
+              <ul class="col-8">
+                <li>Danny</li>
+                <li>Daniel Jakubec</li>
+                <li><a href="mailto:danny@b-soul.cz">danny@b-soul.cz</a></li>
+                <li>(+420) 774 235 852</li>
+              </ul>
+            </div>
           </div>
           <div class="col-3">
-            <ul>
-              <li>Lucaso</li>
-              <li>Lukáš Jakubec</li>
-              <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
-              <li>(+420) 774 235 853</li>
-            </ul>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/mentors/lucaso-contact.png" />
+              </div>
+              <ul class="col-8">
+                <li>Lucaso</li>
+                <li>Lukáš Jakubec</li>
+                <li><a href="mailto:lucaso@b-soul.cz">lucaso@b-soul.cz</a></li>
+                <li>(+420) 774 235 853</li>
+              </ul>
+            </div>
           </div>
           <div class="col-3">
-            <ul>
-              <li>Romča</li>
-              <li>Romana Barešová</li>
-              <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
-              <li>(+420) 737 871 992</li>
-            </ul>
+            <div class="row">
+              <div class="col-4">
+                <img src="img/mentors/romca-contact.png" />
+              </div>
+              <ul class="col-8">
+                <li>Romča</li>
+                <li>Romana Barešová</li>
+                <li><a href="mailto:romca@b-soul.cz">romca@b-soul.cz</a></li>
+                <li>(+420) 737 871 992</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -275,6 +358,8 @@
     </footer>
     <script src="assets/jquery-3.3.1.min.js"></script>
     <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/i18n/datepicker-cs.js"></script>
     <script src="js/global.js"></script>
   </body>
 </html>
