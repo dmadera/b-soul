@@ -1,0 +1,40 @@
+.mentors {
+  .container-fluid {
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  *[class^="col-"] {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  h4 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 60px;
+    font-weight: 500;
+    font-size: 3em;
+    z-index: 10;
+  }
+
+  .info {
+    h6 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+
+}

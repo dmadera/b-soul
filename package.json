@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "Web b-soul.cz",
   "scripts": {
-    "sass-min": "node-sass --output-style compressed scss/app.scss css/app.min.css",
-    "server": "live-server",
-    "start": "npm run watch:sass | npm run server",
-    "build": "npm run sass-min",
-    "watch:sass": "node-sass -w scss/ -o css/"
+    "start": "node-sass scss/app.scss css/app.css | node-sass -w scss/ -o css/ | live-server",
+    "build": "node-sass --output-style compressed scss/app.scss css/app.min.css"
   },
   "repository": {
     "type": "git",

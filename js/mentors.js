@@ -1,21 +1,18 @@
-var toggleMentorInfo = function(cell) {
-    cell.find('.inner-cell').toggleClass('hidden');
-    cell.find('h4').toggle();
+var toggleMentorInfo = function(div) {
+  var row1 = div.find('.row:first-child');
+  var row2 = div.find('.row:last-child');
+
+  if(row1.hasClass('d-none')) {
+    row1.removeClass('d-none');
+    row2.addClass('d-none');
+  } else {
+    row1.addClass('d-none');
+    row2.removeClass('d-none');
+  }
 }
 
 $(function() {
-    $('#mentors .cell').click(function() {
+    $('.mentors .mentor').click(function() {
         toggleMentorInfo($(this));
     });
-
-    $('.mentor-info .item').click(function(event) {
-        if ($('#mediaPanel').is(':visible')) {
-            return;
-        }
-        var content = $(this).find('.content').get(0).outerHTML;
-        $('#mediaPanel .content').replaceWith(content);
-        $('#mediaPanel .content').removeClass('hidden');
-        $('#mediaPanel').slideDown('fast');
-        event.stopPropagation();
-    })
 });
