@@ -1,84 +1,60 @@
 .navbar {
-    display: block;
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    height: 100px;
-    z-index: 9999;
-    border-bottom: 1px solid grey;
-}
+  background-color: #000;
+  padding: 5px 10px 5px 10px;
 
-.navbar {
-    background: black;
-}
-
-.navbar-header {
-    padding: 10px 0px 10px 20px;
-}
-
-.navbar-header a {
-    display: block;
-    width: 100px;
-    height: 80px;
-}
-
-.navbar-header a svg path {
-    fill: #ffffff;
-}
-
-.navbar .nav > li > a {
-    display: table;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 0 30px 0 30px;
-    line-height: 100px;
-    border-right: 1px solid #282828;
-}
-
-.navbar .nav > li:last-child > a {
-    border-right: none;
-}
-
-.navbar .nav > li > a:hover {
-    background: #202020;
-}
-
-.navbar ul.nav {
-    margin: 0;
+  .navbar-brand {
     padding: 0;
-}
+    height: 80px;
 
-.navbar ul.nav > li {
-    display: block;
-    float: left;
-    height: 100%;
-}
+    svg {
+      height: 80px;
+      width: 80px;
+    }
 
-.navbar .dropdown-menu {
-    display: none;
-    list-style: none;
-    background: #202020;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+    h1 {
+      margin: 0;
+    }
 
-.navbar .dropdown-menu li a {
-    display: block;
-    padding: 13px 0px 13px 20px;
-    font-size: 1.2em;
-    border-bottom: 1px solid #282828;
-}
+    svg * {
+      fill: #fff;
+    }
+  }
 
-.navbar .dropdown-menu li:last-child a {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
+  .nav-item {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 8px 25px 8px 25px;
 
-.navbar .dropdown-menu li a:hover {
-    background: #282828;
-}
+    &:not(:last-child) {
+      //border-right: 1px solid grey;
+    }
 
-.navbar .dropdown-menu li:last-child > a {
-    border-bottom: none;
+    .nav-link {
+      color: grey;
+
+      &.active {
+        color: white;
+      }
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: #000;
+      border: 1px solid grey;
+      border-top: 0;
+      border-radius: 0;
+      width: 100%;
+
+      .dropdown-item {
+        color: #fff;
+
+        &:hover {
+          background: $hover-color;
+        }
+      }
+    }
+  }
 }
