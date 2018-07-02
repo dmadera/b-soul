@@ -10,7 +10,6 @@
   *[class^="col-"] {
     padding: 0;
     margin: 0;
-    overflow: hidden;
   }
 
   h4 {
@@ -26,9 +25,12 @@
   }
 
   .info {
+    overflow: hidden;
+    padding: 5px;
+
     h6 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     p {

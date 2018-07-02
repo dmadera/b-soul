@@ -2,6 +2,19 @@ jQuery.fn.exists = function() {
     return this.length > 0;
 }
 
+var navbarHandler = function() {
+    var navbar = $('#mainNav');
+    var scroll = $(window).scrollTop();
+
+    if($(window).width() < 992 || scroll > 50) {
+      navbar.show();
+      $('body').css('padding-top', navbar.height()+10);
+    } else {
+      navbar.hide();
+      $('body').css('padding-top', '0');
+    }
+}
+
 $(function() {
     $("svg[src*='.svg']").each(function() {
       var img = $(this);
@@ -9,18 +22,10 @@ $(function() {
           img.replaceWith(svg);
       }, 'text');
     });
-    // if scroll is on top, hide navbar
-    $('#mainNav').hide();
-    $(window).scroll(function (event) {
-      var scroll = $(window).scrollTop();
-      var navbar = $('#mainNav');
-      if(scroll > 50) {
-        navbar.show();
-      } else {
-        navbar.hide();
-      }
-    });
 
+    navbarHandler();
+    $(window).resize(navbarHandler);
+    $(window).scroll(navbarHandler);
 
     $(".datepicker").datepicker($.datepicker.regional["cs"]);
     $('.datepicker').datepicker({

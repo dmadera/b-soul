@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header class="welcome">
+    <header class="welcome d-none d-lg-block">
       <video class="bgvideo" poster="img/welcome/background.jpg">
         <!--<source src="img/welcome/background-promo.mp4" type="video/mp4" />-->
       </video>
@@ -108,13 +108,13 @@
       <h3>O Nás</h3>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-12 col-xl-4 py-3 py-xl-0">
             <img src="img/onas1.jpg" />
           </div>
-          <div class="col-4">
+          <div class="col-lg-6 col-xl-4 py-3 py-xl-0">
             Jsme parta čtyř mládím vonících a kreativních přátel žijící streetovým tancem. Rozhodli jsme se, že vše, co jsme se naučili, chceme předávat dále, a tak jsme vytvořili B-soul academy. Původně se jednalo o taneční "crew" s názvem B-soul, která se na taneční scéně pohybuje více než pět let a za ty roky se zformovala do dnešní podoby. Naším hlavním záměrem není naučit vás pouze taneční kroky, ale chceme vám ukázat, jak funguje streetová komunita a předat všechny znalosti a zkušenosti jimiž jsme přeplněni. Jednoduše řečeno, to co nás dovedlo až sem, co nás baví, čím žijeme a co milujeme, chceme předat ostatním následovníkům, díky nímž máme energii a chuť dělat to, co děláme. A proto nechceme pouze inspirovat, ale také být inspirování a to právě vámi.
           </div>
-          <div class="col-4">
+          <div class="col-lg-6 col-xl-4 py-3 py-xl-0">
             <img src="img/onas.jpg" />
           </div>
         </div>
@@ -216,107 +216,101 @@
     <section class="page mentor-info" id="danny">
     </section>
     <section class="page signup" id="signup">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h3>Přihláška</h3>
-          </div>
-        </div>
-        <div class="container">
-          <form>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="firstnameInput">Jméno</label>
-                    <input type="text" class="form-control" id="firstnameInput" placeholder="Jan" required />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="lastnameInput">Přijmení</label>
-                    <input type="text" class="form-control" id="lastnameInput" placeholder="Novák" required />
-                  </div>
+      <h3>Přihláška</h3>
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstnameInput">Jméno</label>
+                  <input type="text" class="form-control" id="firstnameInput" placeholder="Jan" required />
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6 date" data-provide="datepicker">
-                    <label for="birthdateInput">Datum narození</label>
-                    <input type="text" class="form-control datepicker" id="birthdateInput" placeholder="1. 1. 2003" required />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="birthnumInput">Rodné číslo</label>
-                    <input type="text" class="form-control" id="birthnumInput" placeholder="123456/7890" required />
-                  </div>
+                <div class="form-group col-md-6">
+                  <label for="lastnameInput">Přijmení</label>
+                  <input type="text" class="form-control" id="lastnameInput" placeholder="Novák" required />
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="streetInput">Ulice</label>
-                    <input type="text" class="form-control" id="streeInput" placeholder="Jahodová 13" required />
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="cityInput">Město</label>
-                    <input type="text" class="form-control" id="cityInput" placeholder="Liberec" required />
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="zipInput">PSČ</label>
-                    <input type="text" class="form-control" id="zipInput" placeholder="PSČ" required />
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 date" data-provide="datepicker">
+                  <label for="birthdateInput">Datum narození</label>
+                  <input type="text" class="form-control datepicker" id="birthdateInput" placeholder="1. 1. 2003" required />
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="phoneInput">Telefon</label>
-                    <input type="tel" class="form-control" id="phoneInput" placeholder="+420 123 456 789" required />
-                  </div>
+                <div class="form-group col-md-6">
+                  <label for="birthnumInput">Rodné číslo</label>
+                  <input type="text" class="form-control" id="birthnumInput" placeholder="123456/7890" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="streetInput">Ulice</label>
+                  <input type="text" class="form-control" id="streeInput" placeholder="Jahodová 13" required />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="cityInput">Město</label>
+                  <input type="text" class="form-control" id="cityInput" placeholder="Liberec" required />
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="zipInput">PSČ</label>
+                  <input type="text" class="form-control" id="zipInput" placeholder="PSČ" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="phoneInput">Telefon</label>
+                  <input type="tel" class="form-control" id="phoneInput" placeholder="+420 123 456 789" required />
+                </div>
 
-                  <div class="form-group col-md-6">
-                    <label for="emailInput">Email</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="test@example.com" required />
-                  </div>
+                <div class="form-group col-md-6">
+                  <label for="emailInput">Email</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="test@example.com" required />
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-6">
-                    <label for="paymentSelect">Způsob platby členství</label>
-                    <select class="form-control" id="paymentSelect" required />
-                      <option selected disabled>prosím vyberte...</option>
-                      <option value="bank">přes účet</option>
-                      <option value="cash">hotově</option>
-                    </select>
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label for="paymentSelect">Způsob platby členství</label>
+                  <select class="form-control" id="paymentSelect" required />
+                    <option selected disabled>prosím vyberte...</option>
+                    <option value="bank">přes účet</option>
+                    <option value="cash">hotově</option>
+                  </select>
                 </div>
-                <div class="accordion representative" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <h5 class="mb-0">
-                        Zákonný zástupce
-                        <i class="fas fa-caret-down"></i>
-                        <small class="float-md-right">vyplňte pouze jste-li mladší 18 let</small>
-                      </h5>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
-                      <div class="card-body">
-                        <div class="form-group">
-                          <label for="namerepInput">Jméno a příjmení zákonného zástupce</label>
-                          <input type="text" class="form-control" id="namerepInput" placeholder="Petr Novák">
-                        </div>
-                        <div class="form-group">
-                          <label for="phonerepInput">Telefon zákonného zástupce</label>
-                          <input type="tel" class="form-control" id="phonerepInput" placeholder="+420 123 456 780">
-                        </div>
-                        <div class="form-group">
-                          <label for="emailrepInput">Email zákonného zástupce</label>
-                          <input type="email" class="form-control" id="emailrepInput" placeholder="test@example.com">
-                        </div>
+              </div>
+              <div class="accordion representative" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 class="mb-0">
+                      Zákonný zástupce
+                      <i class="fas fa-caret-down"></i>
+                      <small class="float-md-right">vyplňte pouze jste-li mladší 18 let</small>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="namerepInput">Jméno a příjmení zákonného zástupce</label>
+                        <input type="text" class="form-control" id="namerepInput" placeholder="Petr Novák">
+                      </div>
+                      <div class="form-group">
+                        <label for="phonerepInput">Telefon zákonného zástupce</label>
+                        <input type="tel" class="form-control" id="phonerepInput" placeholder="+420 123 456 780">
+                      </div>
+                      <div class="form-group">
+                        <label for="emailrepInput">Email zákonného zástupce</label>
+                        <input type="email" class="form-control" id="emailrepInput" placeholder="test@example.com">
                       </div>
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block submit">Odeslat</button>
               </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block submit">Odeslat</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </section>
     <section class="page contacts">
-            <h3>Kontakt</h3>
+      <h3>Kontakt</h3>
       <div class="container-fluid">
         <div class="row mt-3">
           <div class="col-12">

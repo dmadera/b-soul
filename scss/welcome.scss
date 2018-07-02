@@ -1,5 +1,9 @@
 .welcome {
-   padding: 20px 30px;
+  padding: 20px 30px;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 
   .bgvideo {
     position: absolute;
