@@ -1,0 +1,29 @@
+.mentors .container-fluid {
+  padding: 0; }
+
+.mentors .row {
+  margin: 0; }
+
+.mentors *[class^="col-"] {
+  padding: 0;
+  margin: 0; }
+
+.mentors h4 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 60px;
+  font-weight: 500;
+  font-size: 3em;
+  z-index: 10; }
+
+.mentors .info {
+  overflow: hidden;
+  padding: 5px; }
+  .mentors .info h6 {
+    text-align: center;
+    margin-bottom: 10px; }
+  .mentors .info p {
+    text-align: center; }
