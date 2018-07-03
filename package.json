@@ -5,11 +5,11 @@
   "scripts": {
     "build:css": "node-sass --output-style compressed scss/app.scss dist/css/app.min.css",
     "build:html": "html-includes --src html --dest dist",
-    "build:all": "npm run build:css && npm run build:js && npm run build:images",
+    "build": "npm run build:css && npm run build:js && npm run build:images",
     "watch:css": "onchange 'scss/*.scss' -- npm run build:css",
     "watch:html": "onchange 'html/*.html' -- npm run build:html",
     "server": "live-server ./dist",
-    "serve": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'"
+    "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'"
   },
   "repository": {
     "type": "git",

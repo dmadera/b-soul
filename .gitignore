@@ -7,3 +7,5 @@
 
 dist/css/*
 dist/*.html
+*.swp
+*.swo
