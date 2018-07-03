@@ -1,4 +1,4 @@
-@import '../dist/assets/bootstrap/bootstrap.scss';
+@import 'bootstrap/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald|Montserrat');
 $hover-color: #a8835e;
 
@@ -62,10 +62,7 @@ header {
 }
 
 footer {
-  display: block;
-  margin: 0px auto;
   text-align: center;
-  line-height: 100px;
 }
 
 h3 {
@@ -93,13 +90,58 @@ iframe {
   border: 0;
 }
 
+.bg-logo {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.btn {
+  background-color: $hover-color;
+  border: 0;
+  &:hover {
+    background-color: #007bff;
+  }
+}
+
+.border-grey {
+  border: 1px solid grey !important;
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
 .contacts .detail img {
   position: absolute;
   bottom: 0;
   max-width: 140px;
 }
 
+footer {
+  .social {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      width: 50px;
+      margin-right: 10px;
+
+      &:hover {
+        svg [fill='#c0bfbf'] {
+          fill: $hover-color;
+        }
+
+        svg [fill='#414141'] {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
 @import 'navbar.scss';
 @import 'welcome.scss';
-@import 'signup.scss';
 @import 'mentors.scss';

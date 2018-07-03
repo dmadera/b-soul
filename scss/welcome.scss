@@ -93,11 +93,11 @@
         width: 60px;
 
         svg [fill='#c0bfbf'] {
-          fill: #a8835e;
+          fill: $hover-color;
         }
 
         svg [fill='#414141'] {
-          fill: #ffffff;
+          fill: white;
         }
       }
     }
