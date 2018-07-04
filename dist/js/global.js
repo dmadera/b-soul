@@ -5,12 +5,20 @@ jQuery.fn.exists = function() {
 var navbarHandler = function() {
     var navbar = $('#mainNav');
     var scroll = $(window).scrollTop();
+    var path = window.location.pathname;
+    let showNavPages = ['/crew', '/signup'];
+    var showNav = false;
 
-    if($(window).width() < 992 || scroll > 0) {
-      $('body').css('padding-top', navbar.height()+10);
+    showNavPages.forEach(function(page) {
+      if(path.startsWith(page)) {
+        showNav = true;
+        return;
+      }
+    });
+
+    if(showNav || $(window).width() < 992 || scroll > 0) {
       navbar.show();
     } else {
-      $('body').css('padding-top', '0');
       navbar.hide();
     }
 }

@@ -5,33 +5,26 @@ $hover-color: #a8835e;
 a:not([href='']),
 a:focus,
 a:hover {
-  //color: #005999;
   color: $hover-color;
   text-decoration: none;
 }
 
 a[target="_blank"]:after {
-  font-family: 'FontAwesome';
-  content: " \f08e";
+  font-family: FontAwesome;
+  content: "\f08e";
 }
 
 body {
   min-width: 330px;
   background-color: black;
   font-family: Montserrat;
-  //letter-spacing: 3px !important;
-  //font-size: 17px !important;
   color: #f2f2f2;
 }
 
 .page {
+  padding-top: 90px;
   background-color: black;
-  //min-height: 90vh;
-  margin-bottom: 100px;
-
-  &:not(.first-page) {
-    margin: 20px 0;
-  }
+  margin-bottom: 70px;
 }
 
 .page-anchor {
@@ -111,6 +104,10 @@ iframe {
 
 .no-bg {
   background-color: transparent;
+}
+
+.font-sm {
+  font-size: 0.8em;
 }
 
 .contacts .detail img {
