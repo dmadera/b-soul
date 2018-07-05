@@ -1,6 +1,6 @@
 {
   "name": "b-soul",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Web b-soul.cz",
   "scripts": {
     "build:css": "node-sass --output-style compressed scss/app.scss dist/css/app.min.css",
@@ -9,7 +9,10 @@
     "watch:css": "onchange 'scss/*.scss' -- npm run build:css",
     "watch:html": "onchange 'html/*.html' -- npm run build:html",
     "server": "live-server ./dist",
-    "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'"
+    "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'",
+    "deploy:test": "rsync -ru -e 'ssh -p 9108' --progress ./dist/ user@ssh.pemalbc.savana-hosting.cz:new.b-soul.cz",
+    "deploy": "rsync -ru -e 'ssh -p 9108' --progress ./dist/ user@ssh.pemalbc.savana-hosting.cz:b-soul.cz"
+
   },
   "repository": {
     "type": "git",
