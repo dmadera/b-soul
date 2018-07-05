@@ -10,8 +10,8 @@
     "watch:html": "onchange 'html/*.html' -- npm run build:html",
     "server": "live-server ./dist",
     "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'",
-    "deploy:test": "rsync -ru -e 'ssh -p 9108' --progress ./dist/ user@ssh.pemalbc.savana-hosting.cz:new.b-soul.cz",
-    "deploy": "rsync -ru -e 'ssh -p 9108' --progress ./dist/ user@ssh.pemalbc.savana-hosting.cz:b-soul.cz"
+    "deploy:test": "rsync -aruz --progress --delete ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/",
+    "deploy": "rsync -aruz --progress --delete ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/b-soul.cz/"
 
   },
   "repository": {
