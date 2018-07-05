@@ -1,6 +1,6 @@
 {
   "name": "b-soul",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Web b-soul.cz",
   "scripts": {
     "build:css": "node-sass --output-style compressed scss/app.scss dist/css/app.min.css",
