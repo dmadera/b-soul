@@ -9,3 +9,5 @@ dist/css/*
 dist/*.html
 *.swp
 *.swo
+
+npm-debug.log
