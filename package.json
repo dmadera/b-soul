@@ -6,12 +6,13 @@
     "build:css": "node-sass --output-style compressed scss/app.scss dist/css/app.min.css",
     "build:html": "html-includes --src html --dest dist",
     "build": "npm run build:css && npm run build:html && npm run build:css",
+    "watch:php": "onchange dist/scripts/* -- rsync -aruz --progress --delete ./dist/scripts/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/scripts/",
     "watch:css": "onchange 'scss/*.scss' -- npm run build:css",
     "watch:html": "onchange 'html/*.html' -- npm run build:html",
     "server": "live-server ./dist",
-    "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html'",
-    "deploy:test": "rsync -aruz --progress --delete ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/",
-    "deploy": "rsync -aruz --progress --delete ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/b-soul.cz/"
+    "dev": "parallelshell 'npm run server' 'npm run watch:css' 'npm run watch:html' 'npm run watch:php'",
+    "deploy:test": "rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/ --progress --delete",
+    "deploy": "rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/b-soul.cz/ --progress --delete"
 
   },
   "repository": {
