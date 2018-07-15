@@ -132,23 +132,6 @@ iframe {
     max-width: 140px;
 }
 
-.schedule {
-    .timetable {
-        table-layout: fixed;
-    }
-
-.describtion .table {
-    tbody {
-        td:first-child {
-            font-weight: bold;
-        }
-        td:last-child {
-            text-align: right;
-        }
-    }
-}
-}
-
 .table th {
     background-color: rgba(255,255,255,0.1);
 }
@@ -179,3 +162,4 @@ footer {
 @import 'navbar.scss';
 @import 'welcome.scss';
 @import 'mentors.scss';
+@import 'lessons.scss';
