@@ -11,8 +11,8 @@
     "watch:html": "onchange 'html/*.html' -- npm run build:html",
     "server": "live-server ./dist",
     "dev": "npm run build && concurrently 'npm run server' 'npm run watch:css' 'npm run watch:html' 'npm run watch:php'",
-    "deploy:test": "rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/ --progress --delete",
-    "deploy": "rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/b-soul.cz/ --progress --delete"
+    "deploy:test": "npm run build && rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/new.b-soul.cz/ --progress --delete",
+    "deploy": "npm run build && rsync -aruz ./dist/ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/b-soul.cz/ --progress --delete"
   },
   "repository": {
     "type": "git",
