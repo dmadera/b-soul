@@ -3,7 +3,8 @@
         h5 {
             margin-top: 15px;
             padding: 5px;
-            background: rgba(255,255,255,0.2);
+            //background: rgba(255,255,255,0.2);
+            background: $hover-color;
             font-size: 1.3em;
             text-align: center;
         }
@@ -36,13 +37,17 @@
             }
         }
     }
+}
 
-    .describtion {
-        tr {
-            td:first-child {
-                font-weight: bold;
-            }
-        }
+.prices {
+    //.table-bordered,
+    //.table-bordered td,
+    //.table-bordered th {
+        //border: 1px solid  $hover-color;
+    //}
+
+    th {
+        font-size: 1.1em;
+        background: $hover-color;
     }
-
 }
