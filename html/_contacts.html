@@ -1,12 +1,13 @@
 <section class="page contacts" id="contacts">
   <h3>Kontakt</h3>
   <div class="container">
-    <form>
+    <form id="contactForm">
       <div class="row mt-5">
         <div class="col-12 col-lg-6" />
           <div class="form-group">
             <label for="nameInput">Jméno a příjmení</label>
             <input type="text"
+                   name="name"
                    class="form-control"
                    id="nameInput"
                    placeholder="Jana Nováková"
@@ -15,6 +16,7 @@
           <div class="form-group">
             <label for="emailInput">Email</label>
             <input type="email"
+                   name="email"
                    class="form-control"
                    id="emailInput"
                    placeholder="test@example.com"
@@ -22,18 +24,21 @@
           </div>
           <div class="form-group">
             <label for="subjectSelect">Předmět zprávy</label>
-            <select class="form-control" id="subjectSelect" required />
+            <select class="form-control"
+                    name="subject"
+                    id="subjectSelect" required />
               <option selected disabled>prosím vyberte...</option>
-              <option value="lessons">Taneční lekce</option>
-              <option value="showcase">Showcase - vystoupení</option>
-              <option value="lease">Pronájem prostorů</option>
-              <option value="moderating">Moderování</option>
-              <option value="other">Ostatní</option>
+              <option>Taneční lekce</option>
+              <option>Showcase - vystoupení</option>
+              <option>Pronájem prostorů</option>
+              <option>Moderování</option>
+              <option>Ostatní</option>
             </select>
           </div>
           <div class="form-group">
             <label for="noteInput">Text</label>
             <textarea class="form-control"
+                      name="message"
                       id="noteInput"
                       placeholder="Co máte na srdci?"
                       rows="5">

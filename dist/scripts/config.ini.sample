@@ -3,3 +3,7 @@ host = smtp.savana.cz
 user = web@b-soul.cz
 password = password
 
+[email]
+name = B-SOUL Taneční škola
+from = web@b-soul.cz
+
