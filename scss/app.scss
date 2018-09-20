@@ -136,6 +136,12 @@ iframe {
     background-color: rgba(255,255,255,0.1);
 }
 
+.v-align-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 footer {
     .social {
         margin: 0;
