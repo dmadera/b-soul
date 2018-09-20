@@ -7,6 +7,8 @@
 
 dist/css/*
 dist/*.html
+dist/scripts/config.ini
+
 *.swp
 *.swo
 
