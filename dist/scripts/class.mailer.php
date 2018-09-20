@@ -6,6 +6,10 @@ require("../assets/PHPMailer/src/PHPMailer.php");
 require("../assets/PHPMailer/src/SMTP.php");
 require("../assets/PHPMailer/src/Exception.php");
 
+if(!is_file("config.ini")) {
+    die('No config.ini file found!');
+}
+
 $config = parse_ini_file("config.ini", true);
 
 class MyPHPMailer extends PHPMailer
@@ -18,8 +22,10 @@ class MyPHPMailer extends PHPMailer
      */
     public function __construct($exceptions, $body = '')
     {
+        global $config;
+
         parent::__construct($exceptions);
-        $this->setFrom('web@b-soul.cz', 'B-SOUL Taneční škola');
+        $this->setFrom('web@b-soul.cz', 'B-SOUL Tane¿n�kola');
         $this->isSMTP();
         $this->Host = $config['smtp']['host'];
         $this->User = $config['smtp']['user'];

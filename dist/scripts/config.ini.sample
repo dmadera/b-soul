@@ -1,0 +1,5 @@
+[smtp]
+host = smtp.savana.cz
+user = web@b-soul.cz
+password = password
+
