@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald|Montserrat');
 $hover-color: #a8835e;
 
-a:not([href='']),
+a,
 a:focus,
 a:hover {
     color: $hover-color;
+    cursor: pointer;
     text-decoration: none;
 }
 

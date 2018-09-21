@@ -59,4 +59,15 @@
             }
         }
     }
+
+    .show-more {
+        svg {
+            width: 60px;
+        }
+
+        a:hover svg  * {
+          fill: $hover-color !important;
+          color: $hover-color !important;
+        }
+    }
 }
