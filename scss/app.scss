@@ -80,6 +80,13 @@ h3 {
     padding-top: 15px;
     padding-left: 30px;
     color: white;
+
+    small {
+        margin-top: 10px;
+        margin-right: 40px;
+        text-transform: none;
+        font-size: 0.6em;
+    }
 }
 
 h5 {
@@ -170,5 +177,5 @@ footer {
 @import 'welcome.scss';
 @import 'mentors.scss';
 @import 'lessons.scss';
-@import 'offer.scss';
+@import 'offers.scss';
 @import 'courses.scss';
