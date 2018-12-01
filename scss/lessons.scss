@@ -20,6 +20,7 @@
             padding: 8px;
 
             span {
+                word-wrap: break-word;
                 display: block;
 
                 &:nth-child(1) {
