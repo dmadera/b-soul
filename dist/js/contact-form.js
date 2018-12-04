@@ -19,7 +19,12 @@ $('#contactForm').submit(function(event) {
     });
 
     request.done(function (response, textStatus, jqXHR){
-        console.log("Hooray, it worked!", response);
+        console.log("Request is done.", response);
+        if(response['success']) {
+          showMessage('message-success', response);
+        } else {
+          showMessage('message-success', response);
+        }
     });
 
     request.fail(function (jqXHR, textStatus, errorThrown){

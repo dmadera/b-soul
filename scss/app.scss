@@ -1,6 +1,7 @@
 @import 'bootstrap/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald|Montserrat');
 $hover-color: #a8835e;
+$hover-color-alpha: rgba(66, 51, 37, 0.7);
 
 a,
 a:focus,
@@ -149,6 +150,23 @@ iframe {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .close {
+                color: white;
+            }
+
+            background: black;
+            border: 1px solid grey;
+
+            .modal-header, .modal-footer {
+                border-color: $hover-color-alpha;
+            }
+        }
+    }
 }
 
 footer {
