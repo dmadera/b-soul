@@ -8,16 +8,19 @@ function showMessage(type, details) {
   switch(type) {
     case 'message-success':
       setModalData(modal, "Zpráva", `
-        Děkujeme za zprávu.
-        Budeme Tě kontaktovat na email ihned, jak to bude možné.
+        Děkujeme za zprávu.<br>
+        Budeme Tě kontaktovat na email ihned, jak to bude možné.<br>
       `);
       break;
 
     case 'message-failure':
-      setModalData(modal, "Zpráva", `
+      setModalData(modal, "Chyba odeslání zprávy", `
         Zprávu se nepodařilo odeslat.
-        Kontaktujte nás, prosím, přímo na emailu - info@b-soul.cz.
-        Děkujeme.
+        Zkotrolujte, zda máte správně vyplněný formulář z zkuste to znovu.<br>
+        V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
+        Děkujeme.<br>
+        <br>
+        Detail chyby: ` + JSON.stringify(details) + `
       `);
       break;
 
@@ -26,17 +29,19 @@ function showMessage(type, details) {
         Tak a je to! Už jsi součástí B-SOUL.
         Teď už jen stačí vzít kecky do batohu
         a budeme tě čekat na první lekci. <br>
-        Těšíme se na tebe.<br><br>
+        Těšíme se na tebe.<br>
+        <br>
         PS: Doplňující informace dostaneš do emailu.
       `);
       break;
 
     case 'signup-failure':
-      setModalData(modal, "Přihláška", `
-        Nepodařilo se odeslat přihlášku.
-        Prosím, kontaktuj nás o této chybě na emailu - info@b-soul.cz.<br>
-        Pokusíme se s tím něco udělat.<br>
-        Děkujeme.
+      setModalData(modal, "Chyba odeslání přihlášky", `
+        Nepodařilo se odeslat přihlášku.<br>
+        Prosím, zkotrolujte správnost vyplněné přihlášky.<br>
+        V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
+        <br>
+        Detail chyby: ` + JSON.stringify(details) + `
      `);
 
     default:

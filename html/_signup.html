@@ -1,7 +1,7 @@
 <section class="page signup" id="signup">
   <h3>Přihláška</h3>
   <div class="container">
-    <form>
+    <form id="signupForm" method="post">
       <div class="row bg-logo">
         <div class="col-12">
           <div class="form-row">
@@ -10,6 +10,7 @@
               <input type="text"
                      class="form-control"
                      id="firstnameInput"
+                     name="firstname"
                      placeholder="Jan"
                      required />
             </div>
@@ -18,6 +19,7 @@
               <input type="text"
                      class="form-control"
                      id="lastnameInput"
+                     name="lastname"
                      placeholder="Novák"
                      required />
             </div>
@@ -28,6 +30,7 @@
               <input type="text"
                      class="form-control datepicker"
                      id="birthdateInput"
+                     name="birthdate"
                      placeholder="1. 1. 2003"
                      required />
             </div>
@@ -36,6 +39,7 @@
               <input type="text"
                      class="form-control"
                      id="birthnumInput"
+                     name="birthnum"
                      placeholder="123456/7890"
                      required />
             </div>
@@ -46,6 +50,7 @@
               <input type="text"
                      class="form-control"
                      id="streeInput"
+                     name="street"
                      placeholder="Jahodová 13"
                      required />
             </div>
@@ -54,6 +59,7 @@
               <input type="text"
                      class="form-control"
                      id="cityInput"
+                     name="city"
                      placeholder="Liberec"
                      required />
             </div>
@@ -62,6 +68,7 @@
               <input type="text"
                      class="form-control"
                      id="zipInput"
+                     name="zip"
                      placeholder="PSČ"
                      required />
             </div>
@@ -72,6 +79,7 @@
               <input type="tel"
                      class="form-control"
                      id="phoneInput"
+                     name="phone"
                      placeholder="+420 123 456 789"
                      required />
             </div>
@@ -80,6 +88,7 @@
               <input type="email"
                      class="form-control"
                      id="emailInput"
+                     name="email"
                      placeholder="test@example.com"
                      required />
             </div>
@@ -128,6 +137,7 @@
                     <input type="text"
                            class="form-control"
                            id="namerepInput"
+                           name="namerep"
                            placeholder="Petr Novák">
                   </div>
                   <div class="form-group">
@@ -137,6 +147,7 @@
                     <input type="tel"
                            class="form-control"
                            id="phonerepInput"
+                           name="phonerep"
                            placeholder="+420 123 456 780">
                   </div>
                   <div class="form-group">
@@ -146,6 +157,7 @@
                     <input type="email"
                            class="form-control"
                            id="emailrepInput"
+                           name="emailrep"
                            placeholder="test@example.com">
                   </div>
                 </div>

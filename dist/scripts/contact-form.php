@@ -32,7 +32,7 @@ try {
     $htmlmsg = nl2br($message);
     $body =
 <<<HTML
-    Byla vytvořena zpráva z webu b-soul.cz
+    Byla vytvořena zpráva z webu b-soul.cz<br/>
     od <b>$name</b> (email: $email)<br/><br/>
     Text zprávy:<br/><b>$htmlmsg</b>"
 HTML;

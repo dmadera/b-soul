@@ -1,18 +1,18 @@
 var request;
-$('#contactForm').submit(function(event) {
-    var form = $(this);
+$('#signupForm').submit(function(event) {
     event.preventDefault();
 
     if (request) {
         request.abort();
     }
+
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
     $inputs.prop("disabled", true);
 
     request = $.ajax({
-        url: "http://new.b-soul.cz/scripts/contact-form.php",
+        url: "http://new.b-soul.cz/scripts/signup-form.php",
         type: "post",
         dataType: 'text',
         contentType: 'application/x-www-form-urlencoded',
@@ -24,9 +24,9 @@ $('#contactForm').submit(function(event) {
         console.log("Request", response);
         if(response.success) {
           form[0].reset();
-          showMessage('message-success', response);
+          showMessage('signup-success', response);
         } else {
-          showMessage('message-failure', response);
+          showMessage('signup-failure', response);
         }
     });
 
@@ -35,10 +35,12 @@ $('#contactForm').submit(function(event) {
             "The following error occurred: "+
             textStatus, errorThrown
         );
-        showMessage('message-failure', errorThrown);
+        showMessage('signup-failure', errorThrown);
     });
 
     request.always(function () {
         $inputs.prop("disabled", false);
     });
 });
+
+
