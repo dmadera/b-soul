@@ -19,11 +19,11 @@ $('#contactForm').submit(function(event) {
     });
 
     request.done(function (response, textStatus, jqXHR){
-        console.log("Request is done.", response);
+        console.log("Request", response);
         if(response['success']) {
           showMessage('message-success', response);
         } else {
-          showMessage('message-success', response);
+          showMessage('message-failure', response);
         }
     });
 
@@ -32,9 +32,12 @@ $('#contactForm').submit(function(event) {
             "The following error occurred: "+
             textStatus, errorThrown
         );
+        showMessage('message-failure', errorThrown);
     });
 
     request.always(function () {
         $inputs.prop("disabled", false);
     });
 });
+
+

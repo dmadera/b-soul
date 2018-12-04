@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  showMessage('signup-success', null);
+  //showMessage('signup-success', null);
 });
 
 function showMessage(type, details) {
