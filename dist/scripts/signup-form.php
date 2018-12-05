@@ -31,7 +31,7 @@ try {
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) throw new Exception('invalid-email');
 
     $mail = new MyPHPMailer(true);
-    $mail->addAddress('madera.dan@gmail.com');
+    $mail->addAddress('info@b-soul.cz');
     $mail->addReplyTo($email, $firstname+' '+$lastname);
     $mail->setSubject("Přihláška B-SOUL");
     $htmlmsg = nl2br($message);
