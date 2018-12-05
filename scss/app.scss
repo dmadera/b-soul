@@ -16,11 +16,6 @@ a:focus {
     color: grey;
 }
 
-a[target="_blank"]:after {
-    font-family: FontAwesome;
-    content: "\f08e";
-}
-
 body {
     min-width: 330px;
     background-color: black;
@@ -80,7 +75,7 @@ h3 {
     font-size: 3em;
     padding-top: 15px;
     padding-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
 
     small {
@@ -150,6 +145,15 @@ iframe {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
 }
 
 .modal {
