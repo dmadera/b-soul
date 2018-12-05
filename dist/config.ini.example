@@ -1,6 +1,0 @@
-; This is a sample configuration file
-
-[smtp]
-host = "ssl://smtp.savana.cz:465"
-user = "web@b-soul.cz"
-password = "123456"
