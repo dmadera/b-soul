@@ -1,121 +1,126 @@
 .welcome {
-  .bgvideo {
-    left: 0;
-    top: 0;
-    z-index: -1000;
-    opacity: .5;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  .logo, .join-us {
-    position: absolute;
-    width: 17vw;
-    min-width: 250px;
-    height: 17vw;
-    min-height: 250px;
-  }
-
-  .logo {
-    top: 20px;
-    left: 30px;
-    background-color: #fff;
-    -webkit-mask-image: url('../img/logo.svg');
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-  }
-
-  .join-us {
-    bottom: 20px;
-    right: 30px;
-
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
-      background-image: url('../img/welcome/join-us.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-
-      &:hover {
-        background-image: url('../img/welcome/join-us-hover.svg');
-      }
+    .bgvideo {
+        left: 0;
+        top: 0;
+        z-index: -1000;
+        opacity: .5;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
     }
-  }
 
-  .nav {
-    position: absolute;
-    top: 20px;
-    right: 13vw;
-    margin-right: 30px;
-    height: auto;
-    text-align: center;
-    vertical-align: top;
-    display: inline-block;
+    .logo, .join-us {
+        position: absolute;
+        width: 17vw;
+        min-width: 250px;
+        height: 17vw;
+        min-height: 250px;
+    }
 
-    li {
-      display: inline-block;
-      padding: 5px 5px;
+    .logo {
+        top: 20px;
+        left: 30px;
+        background-color: #fff;
+        -webkit-mask-image: url('../img/logo.svg');
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
 
-      a {
-        display: block;
+        @include media-breakpoint-down(lg) {
+            top: 90px;
+        }
+
+    }
+
+    .join-us {
+        bottom: 20px;
+        right: 30px;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-image: url('../img/welcome/join-us.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &:hover {
+                background-image: url('../img/welcome/join-us-hover.svg');
+            }
+        }
+    }
+
+    .nav {
+        position: absolute;
+        top: 20px;
+        right: 13vw;
+        margin-right: 30px;
+        height: auto;
         text-align: center;
-        margin: 5px 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.4em;
-        color: #fff;
+        vertical-align: top;
+        display: inline-block;
 
-        &:hover {
-          color: $hover-color;
+        li {
+            display: inline-block;
+            padding: 5px 5px;
+
+            a {
+                display: block;
+                text-align: center;
+                margin: 5px 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.4em;
+                color: #fff;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
         }
-      }
-  }
-  }
-
-  .social {
-    position: absolute;
-    display: inline-block;
-    vertical-align: top;
-    top: 32px;
-    right: 30px;
-    width: 65px;
-
-    li {
-      width: 50px;
-      height: 65px;
-      margin: 0px auto;
-
-      &:hover {
-        margin-top: -7px;
-        width: 60px;
-
-        svg [fill='#c0bfbf'] {
-          fill: $hover-color;
-        }
-
-        svg [fill='#414141'] {
-          fill: white;
-        }
-      }
-    }
-  }
-
-  .show-more {
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    left: 0;
-    bottom: 25px;
-    text-align: center;
-
-    svg {
-      width: 60px;
     }
 
-    a:hover svg path {
-      fill: $hover-color;
+    .social {
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        top: 32px;
+        right: 30px;
+        width: 65px;
+
+        li {
+            width: 50px;
+            height: 65px;
+            margin: 0px auto;
+
+            &:hover {
+                margin-top: -7px;
+                width: 60px;
+
+                svg [fill='#c0bfbf'] {
+                    fill: $hover-color;
+                }
+
+                svg [fill='#414141'] {
+                    fill: white;
+                }
+            }
+        }
     }
-  }
+
+    .show-more {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        left: 0;
+        bottom: 25px;
+        text-align: center;
+
+        svg {
+            width: 60px;
+        }
+
+        a:hover svg path {
+            fill: $hover-color;
+        }
+    }
 }

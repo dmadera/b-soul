@@ -25,6 +25,7 @@ $(function() {
   navbarHandler();
   $(window).resize(navbarHandler);
   $(window).scroll(navbarHandler);
+  $(window).scroll(videoScrollHandler);
 
   $(".datepicker").datepicker($.datepicker.regional["cs"]);
   $('.datepicker').datepicker({});
@@ -40,3 +41,7 @@ $(function() {
     navMain.collapse('hide');
   });
 });
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
