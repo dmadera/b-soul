@@ -12,7 +12,7 @@ $('#contactForm').submit(function(event) {
     $inputs.prop("disabled", true);
 
     request = $.ajax({
-        url: "http://new.b-soul.cz/scripts/contact-form.php",
+        url: "scripts/contact-form.php",
         type: "post",
         dataType: 'text',
         contentType: 'application/x-www-form-urlencoded',
