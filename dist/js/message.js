@@ -9,7 +9,7 @@ function showMessage(type, details) {
     case 'message-success':
       setModalData(modal, "Zpráva", `
         Děkujeme za zprávu.<br>
-        Budeme Tě kontaktovat na email ihned, jak to bude možné.<br>
+        Budeme tě kontaktovat na email ihned, jak to bude možné.<br>
       `);
       break;
 
