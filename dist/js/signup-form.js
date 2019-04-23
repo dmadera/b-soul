@@ -6,10 +6,10 @@ $('#signupForm').submit(function(event) {
         request.abort();
     }
 
-    var $form = $(this);
-    var $inputs = $form.find("input, select, button, textarea");
-    var serializedData = $form.serialize();
-    $inputs.prop("disabled", true);
+    var form = $(this);
+    var inputs = form.find("input, select, button, textarea");
+    var serializedData = form.serialize();
+    inputs.prop("disabled", true);
 
     request = $.ajax({
         url: "scripts/signup-form.php",
@@ -39,7 +39,7 @@ $('#signupForm').submit(function(event) {
     });
 
     request.always(function () {
-        $inputs.prop("disabled", false);
+        inputs.prop("disabled", false);
     });
 });
 

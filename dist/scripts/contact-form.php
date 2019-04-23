@@ -28,13 +28,14 @@ try {
     $mail = new MyPHPMailer(true);
     $mail->addAddress('info@b-soul.cz');
     $mail->addReplyTo($email, $name);
+    $mail->addCC($email, $name);
     $mail->setSubject($subject);
     $htmlmsg = nl2br($message);
     $body =
 <<<HTML
     Byla vytvořena zpráva z webu b-soul.cz<br/>
     od <b>$name</b> (email: $email)<br/><br/>
-    Text zprávy:<br/><b>$htmlmsg</b>"
+    Text zprávy:<br/><b>$htmlmsg</b>
 HTML;
 
     $mail->setBody($body);
