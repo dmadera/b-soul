@@ -7,42 +7,119 @@
     }
 }
 
-.soulnewbies {
-    border: 1px solid rgba(255, 192, 203, 0.5) !important;
+$soulnewbies: rgb(95.9, 67.5, 65.0);
+$soulstarters: rgb(82.4, 71.7, 60.5);
+$soulrookies: rgb(88.7, 91, 88.1);
+$soulgyals: rgb(84.5, 83.9, 87.6);
+$soulpoppers: rgb(63.6, 69.9, 61.9);
+$soulogs: rgb(100, 93.7, 84.2);
+$soulmastas: rgb(83.4, 87.9, 91.6);
+$soulmamaspapas: rgb(96.7, 69.9, 60.2);
+$soulfreestyle: rgb(255, 255, 255);
+$soulcrew: rgb(90.6, 75.3, 51.4);
+
+.courses {
+    .card {
+	border: none;
+
+	&.soulshow {
+		border: 1px solid white;
+    	}
+    }
+
+    .soulnewbies {
+	    background: rgba($soulnewbies, 1) !important;
+	}
+
+	.soulstarters {
+	    background: rgba($soulstarters, 1) !important;
+	}
+
+	.soulrookies {
+	    background: rgba($soulrookies, 1) !important;
+	}
+
+	.soulgyals {
+	    background: rgba($soulgyals, 1) !important;
+	}
+
+	.soulpoppers {
+	    background: rgba($soulpoppers, 1) !important;
+	}
+
+	.soulogs {
+	    background: rgba($soulogs, 1) !important;
+	}
+
+	.soulmastas {
+	    background: rgba($soulmastas, 1) !important;
+	}
+
+	.soulmamaspapas {
+	    background: rgba($soulmamaspapas, 1) !important;
+	}
+
+	.soulfreestyle {
+	    background: rgba($soulfreestyle, 0.2) !important;
+	}
+
+	.soulcrew  {
+	    background: rgba($soulcrew, 1) !important;
+	}
 }
 
-.soulstarters {
-    border: 1px solid rgba(38, 210, 38, 0.6) !important;
-}
+.schedule {
 
-.soulrookies {
-    border: 1px solid rgba(163, 97, 80, 0.5) !important;
-}
+	.time-block {
+		border: 1px solid black;
+	}
+	.soulnewbies {
+	    border-color: rgba($soulnewbies, 1) !important;
+	    background: rgba($soulnewbies, 0.3) !important;
+	}
 
-.soulgyals {
-    border: 1px solid rgba(246, 246, 24, 0.6) !important;
-}
+	.soulstarters {
+	    border-color: rgba($soulstarters, 1) !important;
+	    background: rgba($soulstarters, 0.3) !important;
+	}
 
-.soulpoppers {
-    border: 1px solid rgba(240, 230, 140, 0.6) !important;
-}
+	.soulrookies {
+	    border-color: rgba($soulrookies, 1) !important;
+	    background: rgba($soulrookies, 0.3) !important;
+	}
 
-.soulogs {
-    border: 1px solid rgba(15, 86, 238, 0.4) !important;
-}
+	.soulgyals {
+	    border-color: rgba($soulgyals, 1) !important;
+	    background: rgba($soulgyals, 0.3) !important;
+	}
 
-.soulmastas {
-    border: 1px solid rgba(15, 238, 210, 0.5) !important;
-}
+	.soulpoppers {
+	    border-color: rgba($soulpoppers, 1) !important;
+	    background: rgba($soulpoppers, 0.3) !important;
+	}
 
-.soulmamaspapas {
-    border: 1px solid rgba(128, 0, 128, 0.5) !important;
-}
+	.soulogs {
+	    border-color: rgba($soulogs, 1) !important;
+	    background: rgba($soulogs, 0.3) !important;
+	}
 
-.soulfreestyle {
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-}
+	.soulmastas {
+	    border-color: rgba($soulmastas, 1) !important;
+	    background: rgba($soulmastas, 0.3) !important;
+	}
 
-.soulbreakers {
-    border: 1px solid rgba(197, 133, 12, 0.5) !important;
+	.soulmamaspapas {
+	    border-color: rgba($soulmamaspapas, 1) !important;
+	    background: rgba($soulmamaspapas, 0.3) !important;
+	}
+
+	.soulfreestyle {
+	    border-color: rgba($soulfreestyle, 0.6) !important;
+	    background: rgba($soulfreestyle, 0.1) !important;
+	}
+
+	.soulcrew  {
+	    border-color: rgba($soulcrew, 1) !important;
+	    background: rgba($soulcrew, 0.3) !important;
+	}
 }
