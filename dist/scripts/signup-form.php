@@ -1,23 +1,25 @@
 <?php
-header('Content-Type: application/json');
-require('class.mailer.php');
 
-$firstname = trim($_POST['firstname']);
-$lastname = trim($_POST['lastname']);
-$birthdate = trim($_POST['birthdate']);
-$birthnum = trim($_POST['birthnum']);
-$street = trim($_POST['street']);
-$city = trim($_POST['city']);
-$zip = trim($_POST['zip']);
-$phone = trim($_POST['phone']);
-$email = trim($_POST['email']);
-$payment = trim($_POST['payment']);
-$note = trim($_POST['note']);
-$namerep = trim($_POST['namerep']);
-$phonerep = trim($_POST['phonerep']);
-$emailrep = trim($_POST['emailrep']);
+header('Content-Type: application/json');
 
 try {
+
+    require('class.mailer.php');
+
+    $firstname = trim($_POST['firstname']);
+    $lastname = trim($_POST['lastname']);
+    $birthdate = trim($_POST['birthdate']);
+    $birthnum = trim($_POST['birthnum']);
+    $street = trim($_POST['street']);
+    $city = trim($_POST['city']);
+    $zip = trim($_POST['zip']);
+    $phone = trim($_POST['phone']);
+    $email = trim($_POST['email']);
+    $payment = trim($_POST['payment']);
+    $note = trim($_POST['note']);
+    $namerep = trim($_POST['namerep']);
+    $phonerep = trim($_POST['phonerep']);
+    $emailrep = trim($_POST['emailrep']);
 
     if(empty($firstname)) throw new Exception('invalid-firstname');
     if(empty($lastname)) throw new Exception('invalid-lastname');

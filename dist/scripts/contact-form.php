@@ -1,13 +1,14 @@
 <?php
-header('Content-Type: application/json');
-require('class.mailer.php');
 
-$name = trim($_POST['name']);
-$email = trim($_POST['email']);
-$subject = trim($_POST['subject']);
-$message = trim($_POST['message']);
+header('Content-Type: application/json');
 
 try {
+    require('class.mailer.php');
+
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $subject = trim($_POST['subject']);
+    $message = trim($_POST['message']);
 
     if(empty($name)) {
         throw new Exception('invalid-name');

@@ -9,7 +9,7 @@ var svgHandler = function() {
 }
 
 var videoHandler = function() {
-  console.log("videohandler");
+  // console.log("videohandler");
   var video = $('.bgvideo');
   const hostname = window.location.hostname;
 
@@ -20,7 +20,10 @@ var videoHandler = function() {
   if(video.hasClass('playable')) {
     setTimeout(function() {
       video.attr('loop', 'true');
-      video[0].play();
+      const playPromise = video[0].play();
+      if (playPromise !== null){
+          playPromise.catch(() => { video[0].play(); })
+      }
     }, 2300);
 
     video.on('abort ended error', function() {
