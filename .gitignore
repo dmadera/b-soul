@@ -1,0 +1,15 @@
+*.bak
+.sass-cache/
+*.css.map
+
+/node_modules/
+/.tmp
+
+dist/css/*
+dist/*.html
+dist/scripts/config.ini
+
+*.swp
+*.swo
+
+npm-debug.log

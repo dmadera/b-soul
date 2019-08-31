@@ -1,0 +1,77 @@
+.mentors {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    *[class^="col-"] {
+        padding: 0;
+        margin: 0;
+    }
+
+    h4 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 60px;
+        font-weight: 500;
+        font-size: 3.3vw;
+        z-index: 10;
+        @include media-breakpoint-down(sm) {
+            top: auto;
+            bottom: 20px;
+            font-size: 28px;
+        }
+    }
+
+    .info {
+        overflow: hidden;
+        padding: 8px 5px;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 5px;
+        }
+
+        h6 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-size: 1.25vw;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 5px;
+                font-size: 22px
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-size: 1vw;
+            text-align: center;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .accordion.col-12 {
+        padding: 0;
+    }
+
+    .show-more {
+        svg {
+            width: 60px;
+        }
+
+        a:hover svg  * {
+          fill: $hover-color !important;
+          color: $hover-color !important;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+@import 'bootstrap/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald|Montserrat');
+$hover-color: #a8835e;
+$hover-color-alpha: rgba(66, 51, 37, 0.7);
+
+a,
+a:focus,
+a:hover {
+    color: $hover-color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: grey;
+}
+
+body {
+    min-width: 330px;
+    background-color: black;
+    font-family: Montserrat;
+    color: #f2f2f2;
+    font-size: 1em;
+    @include media-breakpoint-down(sm) {
+	font-size: 0.8em;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.page {
+    padding-top: 90px;
+    background-color: black;
+}
+
+.page-anchor {
+    position: relative;
+    top: -35px;
+}
+
+img,
+svg {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header,
+footer,
+article,
+section {
+    display: block;
+}
+
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+}
+
+h3 {
+    border-top: 1px solid grey;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2.5em;
+    @include media-breakpoint-down(sm) {
+	font-size: 2em;
+    }
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+
+    small {
+        margin-top: 10px;
+        margin-right: 40px;
+        text-transform: none;
+        font-size: 0.6em;
+    }
+}
+
+h5 {
+    font-size: 1.6em;
+    @include media-breakpoint-down(sm) {
+	font-size: 1.2em;
+    }
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1.4em;
+    @include media-breakpoint-down(sm) {
+	font-size: 1.1em;
+    }
+    font-weight: normal;
+}
+
+iframe {
+    border: 0;
+}
+
+.bg-logo {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.btn {
+    background-color: $hover-color;
+    border: 0;
+    &:hover {
+        background-color: #007bff;
+    }
+}
+
+.border-grey {
+    border: 1px solid grey !important;
+}
+
+.no-bg {
+    background-color: transparent;
+}
+
+.font-sm {
+    font-size: 0.8em;
+}
+
+.font-xs {
+    font-size: 0.65em;
+}
+
+.contacts .detail img {
+    position: absolute;
+    bottom: 0;
+    max-width: 140px;
+}
+
+.table th {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.v-align-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .close {
+                color: white;
+            }
+
+            background: black;
+            border: 1px solid grey;
+
+            .modal-header, .modal-footer {
+                border-color: $hover-color-alpha;
+            }
+        }
+    }
+}
+
+footer {
+    .social {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            width: 50px;
+            margin-right: 10px;
+
+            &:hover {
+                svg [fill='#c0bfbf'] {
+                    fill: $hover-color;
+                }
+
+                svg [fill='#414141'] {
+                    fill: white;
+                }
+            }
+        }
+    }
+}
+
+@import 'navbar.scss';
+@import 'welcome.scss';
+@import 'mentors.scss';
+@import 'lessons.scss';
+@import 'offers.scss';
+@import 'courses.scss';

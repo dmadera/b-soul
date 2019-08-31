@@ -1,0 +1,65 @@
+.schedule {
+    .download-link {
+        margin-top: 10px;
+
+        span {
+            font-size: 0.7em;
+            font-family: Montserrat;
+        }
+    }
+
+
+    .timetable {
+        h5 {
+            margin-top: 15px;
+            padding: 5px;
+            //background: rgba(255,255,255,0.2);
+            background: $hover-color;
+            font-size: 1.3em;
+            text-align: center;
+            border-radius: .25rem;
+        }
+
+        h6 {
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .time-block {
+            margin: 6px 0;
+            padding: 8px;
+	    border-radius: .25rem;
+
+            span {
+                word-wrap: break-word;
+                display: block;
+
+                &:nth-child(1) {
+                    font-size: 0.9em;
+                    text-align: right;
+                }
+
+                &:nth-child(2) {
+                    font-size: 1.2em;
+                }
+
+                &:nth-child(3) {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+.prices {
+    //.table-bordered,
+    //.table-bordered td,
+    //.table-bordered th {
+        //border: 1px solid  $hover-color;
+    //}
+
+    th {
+        font-size: 1.1em;
+        background: $hover-color;
+    }
+}

@@ -1,0 +1,183 @@
+<section class="page signup" id="signup">
+  <h3>Přihláška</h3>
+  <div class="container">
+    <form id="signupForm" method="post">
+      <div class="row bg-logo">
+        <div class="col-12">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstnameInput">Jméno</label>
+              <input type="text"
+                     class="form-control"
+                     id="firstnameInput"
+                     name="firstname"
+                     placeholder="Jan"
+                     required />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastnameInput">Přijmení</label>
+              <input type="text"
+                     class="form-control"
+                     id="lastnameInput"
+                     name="lastname"
+                     placeholder="Novák"
+                     required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 date" data-provide="datepicker">
+              <label for="birthdateInput">Datum narození</label>
+              <input type="text"
+                     class="form-control datepicker"
+                     id="birthdateInput"
+                     name="birthdate"
+                     placeholder="1. 1. 2003"
+                     required />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="birthnumInput">Rodné číslo</label>
+              <input type="text"
+                     class="form-control"
+                     id="birthnumInput"
+                     name="birthnum"
+                     placeholder="123456/7890"
+                     required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="streetInput">Ulice</label>
+              <input type="text"
+                     class="form-control"
+                     id="streeInput"
+                     name="street"
+                     placeholder="Taneční 123"
+                     required />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cityInput">Město</label>
+              <input type="text"
+                     class="form-control"
+                     id="cityInput"
+                     name="city"
+                     placeholder="Japonec nad Krysou"
+                     required />
+            </div>
+            <div class="form-group col-md-2">
+              <label for="zipInput">PSČ</label>
+              <input type="text"
+                     class="form-control"
+                     id="zipInput"
+                     name="zip"
+                     placeholder="PSČ"
+                     required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="phoneInput">Telefon</label>
+              <input type="tel"
+                     class="form-control"
+                     id="phoneInput"
+                     name="phone"
+                     placeholder="+420 123456789"
+                     required />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="emailInput">Email</label>
+              <input type="email"
+                     class="form-control"
+                     id="emailInput"
+                     name="email"
+                     placeholder="test@example.com"
+                     required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="paymentSelect">Způsob platby členství</label>
+              <select class="form-control" id="paymentSelect" name="payment" required />
+                <option selected disabled>prosím vyberte...</option>
+                <option value="bankovní účet">přes účet</option>
+                <option value="hotovost">hotově</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="noteInput">Poznámka</label>
+              <textarea class="form-control"
+                        id="noteInput"
+                        name="note"
+                        placeholder="Chcete něco dodat?"></textarea>
+            </div>
+          </div>
+          <div class="accordion form-group" id="accordionExample">
+            <div class="card border-grey no-bg">
+              <div class="card-header"
+                   id="headingOne"
+                   data-toggle="collapse"
+                   data-target="#collapseOne"
+                   aria-expanded="true"
+                   aria-controls="collapseOne">
+                <h5 class="mb-0">
+                  Zákonný zástupce
+                  <i class="fas fa-caret-down"></i>
+                  <small class="float-md-right">
+                    vyplňte pouze jste-li mladší 18 let
+                  </small>
+                </h5>
+              </div>
+              <div id="collapseOne"
+                   class="collapse"
+                   aria-labelledby="headingOne"
+                   data-parent="">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="namerepInput">
+                      Jméno a příjmení zákonného zástupce
+                    </label>
+                    <input type="text"
+                           class="form-control"
+                           id="namerepInput"
+                           name="namerep"
+                           placeholder="Petr Novák">
+                  </div>
+                  <div class="form-group">
+                    <label for="phonerepInput">
+                      Telefon zákonného zástupce
+                    </label>
+                    <input type="tel"
+                           class="form-control"
+                           id="phonerepInput"
+                           name="phonerep"
+                           placeholder="+420 123 456 780">
+                  </div>
+                  <div class="form-group">
+                    <label for="emailrepInput">
+                      Email zákonného zástupce
+                    </label>
+                    <input type="email"
+                           class="form-control"
+                           id="emailrepInput"
+                           name="emailrep"
+                           placeholder="test@example.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="form-group text-justify font-italic font-sm">
+            Odesláním dáváte souhlas společnosti B-Soul, z.s., s adresou Šumavská 532/1, Liberec IV - Perštýn, 460 01, IČO: 05327377 zapsané ve veřejném rejstříku vedeného Krajským soudem v Ústí nad Labem, (dále jen "B-Soul"), aby dle zákona o Nařízení č. 101/2000 Sb., o ochraně a zpracování osobních údajů, zpracovávala výše uvedené osobní údaje. Zmiňované osobní údaje tanečníka, rodiče či zákonného zástupce je nutné zpracovávat a uchovávat pro účely komunikace a vedení členské evidence. Současně se zavazuji jakoukoli změnu zpracovávaných údajů bez zbytečného odkladu nahlásit správnímu úseku B-Soul. Dále také souhlasím, aby B-Soul a jeho smluvní partneři zpracovávali mé osobní údaje (fotografie, audiovizuální záznamy, atp.) pro účely marketingu, propagace a prezentace
+Prohlašuji, že jsem byl/a seznámena s provozním řádem, zásadami a pravidly bezpečného chování v prostorách B-Soul.
+Jsem srozuměn/a se svým právem mít přístup ke svým Osobním údajům dle Nařízení.
+S výše uvedeným zpracováním uděluji svůj výslovný, konkrétní a dobrovolný souhlas.
+<div class="form-group">
+            <button type="submit"
+                    class="btn btn-primary btn-lg btn-block submit">
+              Odeslat
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
