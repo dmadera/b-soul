@@ -17,6 +17,7 @@
             background: $hover-color;
             font-size: 1.3em;
             text-align: center;
+            border-radius: .25rem;
         }
 
         h6 {
@@ -27,6 +28,7 @@
         .time-block {
             margin: 6px 0;
             padding: 8px;
+	    border-radius: .25rem;
 
             span {
                 word-wrap: break-word;
