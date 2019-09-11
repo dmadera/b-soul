@@ -35,8 +35,8 @@ try {
 
     $mail = new MyPHPMailer(true);
     $mail->addAddress('info@b-soul.cz');
-    $mail->addCC($email, $firstname+' '+$lastname);
-    $mail->addReplyTo($email, $firstname+' '+$lastname);
+    $mail->addCC($email, $firstname.' '.$lastname);
+    $mail->addReplyTo($email, $firstname.' '.$lastname);
     $mail->setSubject("Přihláška B-SOUL");
     $htmlmsg = nl2br($message);
     $body =
@@ -49,7 +49,7 @@ try {
     Adresa: $street, $zip $city<br/>
     Telefon: $phone<br/>
     Email: $email<br/>
-    Způsob platby: $course<br/>
+    Kurz: $course<br/>
     Způsob platby: $payment<br/>
     Poznámka: $note<br/>
     ----------------------<br/>
