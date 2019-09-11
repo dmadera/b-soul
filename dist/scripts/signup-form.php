@@ -15,6 +15,7 @@ try {
     $zip = trim($_POST['zip']);
     $phone = trim($_POST['phone']);
     $email = trim($_POST['email']);
+    $course = trim($_POST['course']);
     $payment = trim($_POST['payment']);
     $note = trim($_POST['note']);
     $namerep = trim($_POST['namerep']);
@@ -48,6 +49,7 @@ try {
     Adresa: $street, $zip $city<br/>
     Telefon: $phone<br/>
     Email: $email<br/>
+    Způsob platby: $course<br/>
     Způsob platby: $payment<br/>
     Poznámka: $note<br/>
     ----------------------<br/>
