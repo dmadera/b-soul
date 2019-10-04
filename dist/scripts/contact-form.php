@@ -27,7 +27,7 @@ try {
     }
 
     $mail = new MyPHPMailer(true);
-    $mail->addAddress('info@b-soul.cz');
+    $mail->addAddress('info@b-soul.cz', 'B-SOUL info');
     $mail->addReplyTo($email, $name);
     $mail->addCC($email, $name);
     $mail->setSubject($subject);
