@@ -40,6 +40,15 @@ $(function() {
   navMain.on("click", "a:not([data-toggle])", null, function () {
     navMain.collapse('hide');
   });
+
+  var cookieKemp2021 = $.cookie("kemp2021");
+  console.log(cookieKemp2021);
+  if(!cookieKemp2021) {
+    $.cookie("kemp2021", 1, { expires : 7 });
+    showMessage('kemp-2021', '');
+  }
+
+
 });
 
 function isMobile() {

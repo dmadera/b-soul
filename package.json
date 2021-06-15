@@ -21,7 +21,9 @@
   "author": "Daniel Maděra",
   "license": "MIT",
   "homepage": "https://b-soul.cz",
-  "dependencies": {},
+  "dependencies": {
+    "jquery.cookie": "^1.4.1"
+  },
   "devDependencies": {
     "autoprefixer": "latest",
     "concurrently": "^3.6.0",

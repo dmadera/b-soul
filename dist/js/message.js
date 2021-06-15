@@ -43,6 +43,16 @@ function showMessage(type, details) {
         <br>
         Detail chyby: ` + JSON.stringify(details) + `
      `);
+     break;
+
+    case 'kemp-2021':
+      setModalData(modal, "B-SOUL KEMP 2021", `
+        Ahoj, už jsi slyšel o našem letním soustředění - <strong>B-SOUL KEMP 2021</strong>?
+        Nejlíp uděláš, když se přihlásíš a rovnou s námi vyrazíš.<br>
+        Více v události na <a href="https://www.facebook.com/events/154671136487484" title="Facebook událost"><strong>zde</strong></a> nebo na
+        <a href="mailto:info@b-soul.cz" title="Email"><strong>info@b-soul.cz</strong></a>. 
+     `);
+     break;
 
     default:
       setModalData(modal, "Zpráva", `Ahoj tanečníku!`);
