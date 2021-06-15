@@ -42,13 +42,10 @@ $(function() {
   });
 
   var cookieKemp2021 = $.cookie("kemp2021");
-  console.log(cookieKemp2021);
-  if(!cookieKemp2021) {
+  if(cookieKemp2021 != 1) {
     $.cookie("kemp2021", 1, { expires : 7 });
     showMessage('kemp-2021', '');
   }
-
-
 });
 
 function isMobile() {
