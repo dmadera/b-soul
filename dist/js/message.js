@@ -1,66 +1,96 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //showMessage('signup-success', null);
-});
+})
 
 function showMessage(type, details) {
-  var modal = $('#modal-info');
+  var modal = $("#modal-info")
 
-  switch(type) {
-    case 'message-success':
-      setModalData(modal, "Zpráva", `
+  switch (type) {
+    case "message-success":
+      setModalData(
+        modal,
+        "Zpráva",
+        `
         Děkujeme za zprávu.<br>
         Budeme tě kontaktovat na email ihned, jak to bude možné.<br>
-      `);
-      break;
+      `
+      )
+      break
 
-    case 'message-failure':
-      setModalData(modal, "Chyba odeslání zprávy", `
+    case "message-failure":
+      setModalData(
+        modal,
+        "Chyba odeslání zprávy",
+        `
         Zprávu se nepodařilo odeslat.
         Zkotrolujte, zda máte správně vyplněný formulář z zkuste to znovu.<br>
         V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
         Děkujeme.<br>
         <br>
-        Detail chyby: ` + JSON.stringify(details) + `
-      `);
-      break;
+        Detail chyby: ` +
+          JSON.stringify(details) +
+          `
+      `
+      )
+      break
 
-    case 'signup-success':
-      setModalData(modal, "Přihláška", `
+    case "signup-success":
+      setModalData(
+        modal,
+        "Přihláška",
+        `
         Tak a je to! Už jsi součástí B-SOUL.
         Teď už jen stačí vzít kecky do batohu
         a budeme tě čekat na první lekci. <br>
         Těšíme se na tebe.<br>
         <br>
         PS: Doplňující informace dostaneš do emailu.
-      `);
-      break;
+      `
+      )
+      break
 
-    case 'signup-failure':
-      setModalData(modal, "Chyba odeslání přihlášky", `
+    case "signup-failure":
+      setModalData(
+        modal,
+        "Chyba odeslání přihlášky",
+        `
         Nepodařilo se odeslat přihlášku.<br>
         Prosím, zkotrolujte správnost vyplněné přihlášky.<br>
         V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
         <br>
-        Detail chyby: ` + JSON.stringify(details) + `
-     `);
-     break;
+        Detail chyby: ` +
+          JSON.stringify(details) +
+          `
+     `
+      )
+      break
 
-    case 'kemp-2021':
-      setModalData(modal, "B-SOUL KEMP 2021", `
-        Ahoj, už jsi slyšel o našem letním soustředění - <strong>B-SOUL KEMP 2021</strong>?
-        Nejlíp uděláš, když se přihlásíš a rovnou s námi vyrazíš.<br>
-        Více v události na <a href="https://www.facebook.com/events/154671136487484" title="Facebook událost"><strong>zde</strong></a> nebo na
-        <a href="mailto:info@b-soul.cz" title="Email"><strong>info@b-soul.cz</strong></a>. 
-     `);
-     break;
+    case "kemp-2022":
+      setModalData(
+        modal,
+        "B-SOUL KEMP & B-SOUL COMMUNITY TIME",
+        `
+        <div class="container-fluid">
+          <div class="row">
+            <a class="col-md-6" href="https://www.facebook.com/events/1155331575286331" title="B-SOUL COMMUNITY TIME na Facebooku">
+              <img src="img/b-soul-community-time-2022.jpg" alt="Zveme Tě na naši show!">
+            </a>
+            <a class="col-md-6" href="https://forms.gle/Wr3wuqQML459Sh8y9" title="Přihláška na B-SOUL KEMP">
+              <img src="img/b-soul-kemp-2022.jpg" alt="Zveme Tě na náš kemp!">
+            </a>
+          </div>
+        </div>  
+     `
+      )
+      break
 
     default:
-      setModalData(modal, "Zpráva", `Ahoj tanečníku!`);
+      setModalData(modal, "Zpráva", `Ahoj tanečníku!`)
   }
-  modal.modal('show');
+  modal.modal("show")
 }
 
 function setModalData(modal, title, body) {
-  modal.find(".modal-title").text(title);
-  modal.find(".modal-text").html(body);
+  modal.find(".modal-title").text(title)
+  modal.find(".modal-text").html(body)
 }

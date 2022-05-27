@@ -171,6 +171,10 @@ iframe {
 
 .modal {
     .modal-dialog {
+        @media (min-width: 768px) {
+            max-width: 58vw;
+        }
+
         .modal-content {
             .close {
                 color: white;
