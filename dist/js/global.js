@@ -48,11 +48,11 @@ $(function () {
     navMain.collapse("hide")
   })
 
-  var cookieKemp = $.cookie("kemp2022")
-  if (cookieKemp != 1) {
-    $.cookie("kemp2022", 1, { expires: 5 / 1440 })
-    showMessage("kemp-2022", "")
-  }
+  // var cookieKemp = $.cookie("kemp2022")
+  // if (cookieKemp != 1) {
+  //   $.cookie("kemp2022", 1, { expires: 5 / 1440 })
+  //   showMessage("kemp-2022", "")
+  // }
 })
 
 function isMobile() {
