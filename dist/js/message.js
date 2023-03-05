@@ -1,44 +1,44 @@
 $(document).ready(function () {
-  //showMessage('signup-success', null);
+    //showMessage('signup-success', null);
 })
 
 function showMessage(type, details) {
-  var modal = $("#modal-info")
+    var modal = $("#modal-info")
 
-  switch (type) {
-    case "message-success":
-      setModalData(
-        modal,
-        "Zpráva",
-        `
+    switch (type) {
+        case "message-success":
+            setModalData(
+                modal,
+                "Zpráva",
+                `
         Děkujeme za zprávu.<br>
         Budeme tě kontaktovat na email ihned, jak to bude možné.<br>
       `
-      )
-      break
+            )
+            break
 
-    case "message-failure":
-      setModalData(
-        modal,
-        "Chyba odeslání zprávy",
-        `
+        case "message-failure":
+            setModalData(
+                modal,
+                "Chyba odeslání zprávy",
+                `
         Zprávu se nepodařilo odeslat.
         Zkotrolujte, zda máte správně vyplněný formulář z zkuste to znovu.<br>
         V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
         Děkujeme.<br>
         <br>
         Detail chyby: ` +
-          JSON.stringify(details) +
-          `
+                    JSON.stringify(details) +
+                    `
       `
-      )
-      break
+            )
+            break
 
-    case "signup-success":
-      setModalData(
-        modal,
-        "Přihláška",
-        `
+        case "signup-success":
+            setModalData(
+                modal,
+                "Přihláška",
+                `
         Tak a je to! Už jsi součástí B-SOUL.
         Teď už jen stačí vzít kecky do batohu
         a budeme tě čekat na první lekci. <br>
@@ -46,30 +46,30 @@ function showMessage(type, details) {
         <br>
         PS: Doplňující informace dostaneš do emailu.
       `
-      )
-      break
+            )
+            break
 
-    case "signup-failure":
-      setModalData(
-        modal,
-        "Chyba odeslání přihlášky",
-        `
+        case "signup-failure":
+            setModalData(
+                modal,
+                "Chyba odeslání přihlášky",
+                `
         Nepodařilo se odeslat přihlášku.<br>
         Prosím, zkotrolujte správnost vyplněné přihlášky.<br>
         V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@b-soul.cz.<br>
         <br>
         Detail chyby: ` +
-          JSON.stringify(details) +
-          `
+                    JSON.stringify(details) +
+                    `
      `
-      )
-      break
+            )
+            break
 
-    case "kemp-2022":
-      setModalData(
-        modal,
-        "B-SOUL KEMP & B-SOUL COMMUNITY TIME",
-        `
+        case "kemp-2022":
+            setModalData(
+                modal,
+                "B-SOUL KEMP & B-SOUL COMMUNITY TIME",
+                `
         <div class="container-fluid">
           <div class="row">
             <a class="col-md-6" href="https://www.facebook.com/events/1155331575286331" title="B-SOUL COMMUNITY TIME na Facebooku">
@@ -81,16 +81,32 @@ function showMessage(type, details) {
           </div>
         </div>  
      `
-      )
-      break
+            )
+            break
 
-    default:
-      setModalData(modal, "Zpráva", `Ahoj tanečníku!`)
-  }
-  modal.modal("show")
+        case "kemp-2023":
+            setModalData(
+                modal,
+                "B-SOUL KEMP & B-SOUL COMMUNITY TIME",
+                `
+        <div class="container-fluid">
+          <div class="row">
+            <a class="col-md-12" href="https://forms.gle/xjy5j71tZr51VBtYA" title="Přihláška na B-SOUL KEMP">
+              <img src="img/b-soul-kemp-2023.jpg" alt="Zveme Tě na náš kemp!">
+            </a>
+          </div>
+        </div>  
+      `
+            )
+            break
+
+        default:
+            setModalData(modal, "Zpráva", `Ahoj tanečníku!`)
+    }
+    modal.modal("show")
 }
 
 function setModalData(modal, title, body) {
-  modal.find(".modal-title").text(title)
-  modal.find(".modal-text").html(body)
+    modal.find(".modal-title").text(title)
+    modal.find(".modal-text").html(body)
 }
