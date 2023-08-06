@@ -99,7 +99,19 @@ function showMessage(type, details) {
       `
             )
             break
-
+        case "welcome-banner":
+            setModalData(
+                modal,
+                "B-SOUL DAY - WELCOME PARTY",
+                `
+          <div class="container-fluid">
+            <div class="row">
+                <img src="img/b-soul-welcome-party.jpg" alt="Zveme Tě welcome party!">
+            </div>
+          </div>  
+        `
+            )
+            break
         default:
             setModalData(modal, "Zpráva", `Ahoj tanečníku!`)
     }

@@ -57,10 +57,10 @@ $(function () {
     //   $.cookie("kemp2022", 1, { expires: 5 / 1440 })
     //   showMessage("kemp-2022", "")
     // }
-    var cookieKemp = $.cookie("kemp2023")
+    var cookieKemp = $.cookie("welcome-banner")
     if (cookieKemp != 1) {
-        $.cookie("kemp2023", 1, { expires: 5 / 1440 })
-        showMessage("kemp-2023", "")
+        $.cookie("welcome-banner", 1, { expires: 5 / 1440 })
+        showMessage("welcome-banner", "")
     }
 })
 
