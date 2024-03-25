@@ -99,6 +99,21 @@ function showMessage(type, details) {
       `
             )
             break
+        case "kemp-2024":
+            setModalData(
+                modal,
+                "B-SOUL KEMP",
+                `
+        <div class="container-fluid">
+          <div class="row">
+            <a class="col-md-12" href="https://forms.gle/qmhUnieEA8zJMstS9" title="Přihláška na B-SOUL KEMP">
+              <img src="img/b-soul-kemp-2024.jpg" alt="Zveme Tě na náš kemp!">
+            </a>
+          </div>
+        </div>  
+      `
+            )
+            break
         case "welcome-banner":
             setModalData(
                 modal,
