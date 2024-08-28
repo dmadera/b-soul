@@ -52,11 +52,11 @@ $(function () {
         navMain.collapse("hide")
     })
 
-    var cookieKemp = $.cookie("kemp2024")
-    if (cookieKemp != 1) {
-        $.cookie("kemp2024", 1, { expires: 5 / 1440 })
-        showMessage("kemp-2024", "")
-    }
+    // var cookieKemp = $.cookie("kemp2024")
+    // if (cookieKemp != 1) {
+    //     $.cookie("kemp2024", 1, { expires: 5 / 1440 })
+    //     showMessage("kemp-2024", "")
+    // }
     // var cookieKemp = $.cookie("welcome-banner")
     // if (cookieKemp != 1) {
     //     $.cookie("welcome-banner", 1, { expires: 5 / 1440 })
